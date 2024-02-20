@@ -317,14 +317,16 @@
                   :Agentes ;
          :responsable :Inmueble1 ,
                       :Inmueble2 ;
-         :nombre_agente_inmobiliario "Juan Valdez" .
+         :nombre_agente_inmobiliario "Juan Valdez" ;
+         rdfs:label "Agente Juan Valdez"@es .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Agente2
 :Agente2 rdf:type owl:NamedIndividual ,
                   :Agentes ;
          :responsable :Lote1 ;
-         :nombre_agente_inmobiliario "Juan Perez"^^xsd:string .
+         :nombre_agente_inmobiliario "Juan Perez"^^xsd:string ;
+         rdfs:label "Agente Juan Perez"@es .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Aire_Acondicionado
@@ -505,6 +507,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Direccion3
 :Direccion3 rdf:type owl:NamedIndividual ,
                      :Ubicacion ;
+            :situado_en :Barrio4 ;
             :direccion "Sucre y Teniente Ledesma" ;
             :latitud "-3.242805"^^xsd:double ;
             :longitud "-79.823434"^^xsd:double ;
