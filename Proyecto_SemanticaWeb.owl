@@ -288,6 +288,30 @@
 #    Individuals
 #################################################################
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Barrio4
+:Barrio4 rdf:type owl:NamedIndividual ,
+                  :Barrios ;
+         :barrio_de :Parroquia4 ;
+         :nombre_barrio "La Palestina"^^xsd:string ;
+         rdfs:label "La Palestina"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Canton4
+:Canton4 rdf:type owl:NamedIndividual ,
+                  :Canton ;
+         :canton_de :Provincia1 ;
+         :nombre_canton "El Guabo"^^xsd:string ;
+         rdfs:label "El Guabo"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Parroquia4
+:Parroquia4 rdf:type owl:NamedIndividual ,
+                     :Parroquia ;
+            :parroquia_de :Canton4 ;
+            :nombre_parroquia "Rio Bonito"^^xsd:string ;
+            rdfs:label "Rio Bonito"@es .
+
+
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Agente1
 :Agente1 rdf:type owl:NamedIndividual ,
                   :Agentes ;
@@ -478,13 +502,14 @@
             rdfs:label "Direccion en Piñas"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/El_Guabo
-:El_Guabo rdf:type owl:NamedIndividual ,
-                   :Ubicacion ;
-          :direccion "Sucre y Teniente Ledesma" ;
-          :latitud "-3.242805"^^xsd:double ;
-          :longitud "-79.823434"^^xsd:double ;
-          :nombre_barrio "El Vergel" .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Direccion3
+:Direccion3 rdf:type owl:NamedIndividual ,
+                     :Ubicacion ;
+            :direccion "Sucre y Teniente Ledesma" ;
+            :latitud "-3.242805"^^xsd:double ;
+            :longitud "-79.823434"^^xsd:double ;
+            :nombre_barrio "El Vergel" ;
+            rdfs:label "Direccion en El Guabo"@es .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Energia_Electrica
@@ -546,7 +571,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Lote1
 :Lote1 rdf:type owl:NamedIndividual ,
                 :Lotes ;
-       :situado_en :El_Guabo ;
+       :situado_en :Direccion3 ;
        :moneda "Dólar" ;
        :precio "50000.0"^^xsd:double ;
        :superficie_ancho "15.0"^^xsd:double ;
@@ -563,6 +588,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Parroquia1
 :Parroquia1 rdf:type owl:NamedIndividual ,
                      :Parroquia ;
+            :parroquia_de :Canton_Machala ;
             :nombre_parroquia "Jambeli"^^xsd:string ;
             rdfs:label "Jambeli"@es .
 
