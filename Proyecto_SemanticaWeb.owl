@@ -288,30 +288,6 @@
 #    Individuals
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Barrio4
-:Barrio4 rdf:type owl:NamedIndividual ,
-                  :Barrios ;
-         :barrio_de :Parroquia4 ;
-         :nombre_barrio "La Palestina"^^xsd:string ;
-         rdfs:label "La Palestina"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Canton4
-:Canton4 rdf:type owl:NamedIndividual ,
-                  :Canton ;
-         :canton_de :Provincia1 ;
-         :nombre_canton "El Guabo"^^xsd:string ;
-         rdfs:label "El Guabo"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Parroquia4
-:Parroquia4 rdf:type owl:NamedIndividual ,
-                     :Parroquia ;
-            :parroquia_de :Canton4 ;
-            :nombre_parroquia "Rio Bonito"^^xsd:string ;
-            rdfs:label "Rio Bonito"@es .
-
-
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Agente1
 :Agente1 rdf:type owl:NamedIndividual ,
                   :Agentes ;
@@ -364,6 +340,14 @@
          rdfs:label "Portete"@es .
 
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Barrio4
+:Barrio4 rdf:type owl:NamedIndividual ,
+                  :Barrios ;
+         :barrio_de :Parroquia4 ;
+         :nombre_barrio "La Palestina"^^xsd:string ;
+         rdfs:label "La Palestina"@es .
+
+
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Calefaccion
 :Calefaccion rdf:type owl:NamedIndividual ,
                       :Amenities .
@@ -377,25 +361,27 @@
          rdfs:label "Piñas"@es .
 
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton4
+:Canton4 rdf:type owl:NamedIndividual ,
+                  :Canton ;
+         :canton_de :Provincia1 ;
+         :nombre_canton "El Guabo"^^xsd:string ;
+         rdfs:label "El Guabo"@es .
+
+
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Catamayo
 :Canton_Catamayo rdf:type owl:NamedIndividual ,
                           :Canton ;
+                 :canton_de :Provincia_Loja ;
                  :nombre_canton "Catamayo"^^xsd:string ;
                  :perteneciente_a :Provincia_Loja ;
                  rdfs:label "Catamayo"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Cayambe
-:Canton_Cayambe rdf:type owl:NamedIndividual ,
-                         :Canton ;
-                :nombre_canton "Cayambe"^^xsd:string ;
-                :perteneciente_a :Provincia_Pichincha ;
-                rdfs:label "Cayambe"@es .
-
-
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Cuenca
 :Canton_Cuenca rdf:type owl:NamedIndividual ,
                         :Canton ;
+               :canton_de :Provincia_Azuay ;
                :nombre_canton "Cuenca"^^xsd:string ;
                :perteneciente_a :Provincia_Azuay ;
                rdfs:label "Cuenca"@es .
@@ -404,6 +390,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Duran
 :Canton_Duran rdf:type owl:NamedIndividual ,
                        :Canton ;
+              :canton_de :Provincia_Guayas ;
               :nombre_canton "Duran"^^xsd:string ;
               :perteneciente_a :Provincia_Guayas ;
               rdfs:label "Duran"@es .
@@ -420,6 +407,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Guayaquil
 :Canton_Guayaquil rdf:type owl:NamedIndividual ,
                            :Canton ;
+                  :canton_de :Provincia_Guayas ;
                   :nombre_canton "Guayaquil"^^xsd:string ;
                   :perteneciente_a :Provincia_Guayas ;
                   rdfs:label "Guayaquil"@es .
@@ -436,6 +424,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Loja
 :Canton_Loja rdf:type owl:NamedIndividual ,
                       :Canton ;
+             :canton_de :Provincia_Loja ;
              :nombre_canton "Loja"^^xsd:string ;
              :perteneciente_a :Provincia_Loja ;
              rdfs:label "Loja"@es .
@@ -453,6 +442,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Manta
 :Canton_Manta rdf:type owl:NamedIndividual ,
                        :Canton ;
+              :canton_de :Provincia_Manabi ;
               :nombre_canton "Manta"^^xsd:string ;
               :perteneciente_a :Provincia_Manabi ;
               rdfs:label "Manta"@es .
@@ -461,6 +451,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Portoviejo
 :Canton_Portoviejo rdf:type owl:NamedIndividual ,
                             :Canton ;
+                   :canton_de :Provincia_Manabi ;
                    :nombre_canton "Portoviejo"^^xsd:string ;
                    :perteneciente_a :Provincia_Manabi ;
                    rdfs:label "Portoviejo"@es .
@@ -469,6 +460,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Quito
 :Canton_Quito rdf:type owl:NamedIndividual ,
                        :Canton ;
+              :canton_de :Provincia_Pichincha ;
               :nombre_canton "Quito"^^xsd:string ;
               :perteneciente_a :Provincia_Pichincha ;
               rdfs:label "Quito"@es .
@@ -599,6 +591,14 @@
             :parroquia_de :Canton2 ;
             :nombre_parroquia "Piñas Grande"^^xsd:string ;
             rdfs:label "Piñas Grande"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Parroquia4
+:Parroquia4 rdf:type owl:NamedIndividual ,
+                     :Parroquia ;
+            :parroquia_de :Canton4 ;
+            :nombre_parroquia "Rio Bonito"^^xsd:string ;
+            rdfs:label "Rio Bonito"@es .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia1
