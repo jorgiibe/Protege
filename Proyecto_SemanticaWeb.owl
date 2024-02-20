@@ -12,26 +12,28 @@
 #    Object Properties
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#canton_de
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#parroquia_de
+:parroquia_de rdf:type owl:ObjectProperty ;
+              rdfs:domain :Canton ;
+              rdfs:range :Parroquia .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/barrio_de
+:barrio_de rdf:type owl:ObjectProperty ;
+           rdfs:domain :Parroquia ;
+           rdfs:range :Barrios .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/canton_de
 :canton_de rdf:type owl:ObjectProperty ;
            rdfs:domain :Provincia ;
            rdfs:range :Canton .
-
-
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#provincia_de
-:provincia_de rdf:type owl:ObjectProperty ;
-              rdfs:domain :Pais ;
-              rdfs:range :Provincia .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/dispone_servicios_basicos
 :dispone_servicios_basicos rdf:type owl:ObjectProperty ;
                            rdfs:domain :Casas ;
                            rdfs:range :Servicios .
-
-
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/en_el_barrio
-:en_el_barrio rdf:type owl:ObjectProperty .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/es
@@ -45,6 +47,12 @@
 :oferta rdf:type owl:ObjectProperty ;
         rdfs:domain :Avisos ;
         rdfs:range :Inmuebles .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/provincia_de
+:provincia_de rdf:type owl:ObjectProperty ;
+              rdfs:domain :Pais ;
+              rdfs:range :Provincia .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/responsable
@@ -68,24 +76,6 @@
 #################################################################
 #    Data properties
 #################################################################
-
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#nombre_canton
-:nombre_canton rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Canton ;
-               rdfs:range xsd:string .
-
-
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#nombre_parroquia
-:nombre_parroquia rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Parroquia ;
-                  rdfs:range xsd:string .
-
-
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#nombre_provincia
-:nombre_provincia rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Provincia ;
-                  rdfs:range xsd:string .
-
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/cantidad_habitaciones
 :cantidad_habitaciones rdf:type owl:DatatypeProperty ;
@@ -147,6 +137,12 @@
                rdfs:range xsd:string .
 
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/nombre_canton
+:nombre_canton rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Canton ;
+               rdfs:range xsd:string .
+
+
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/nombre_inmobiliaira
 :nombre_inmobiliaira rdf:type owl:DatatypeProperty ;
                      rdfs:domain :Inmobiliaria ;
@@ -163,6 +159,18 @@
 :nombre_pais rdf:type owl:DatatypeProperty ;
              rdfs:domain :Pais ;
              rdfs:range xsd:string .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/nombre_parroquia
+:nombre_parroquia rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Parroquia ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/nombre_provincia
+:nombre_provincia rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Provincia ;
+                  rdfs:range xsd:string .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/precio
@@ -272,162 +280,12 @@
 #    Individuals
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Canton1
-:Canton1 rdf:type owl:NamedIndividual ,
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Canton2
+:Canton2 rdf:type owl:NamedIndividual ,
                   :Canton ;
          :canton_de :Provincia1 ;
-         :nombre_canton "Machala"^^xsd:string ;
-         rdfs:label "Machala"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Parroquia1
-:Parroquia1 rdf:type owl:NamedIndividual ,
-                     :Parroquia ;
-            :nombre_parroquia "Jambeli"^^xsd:string ;
-            rdfs:label "Jambeli"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Provincia1
-:Provincia1 rdf:type owl:NamedIndividual ,
-                     :Provincia ;
-            :provincia_de :Pais1 ;
-            :nombre_provincia "El Oro"^^xsd:string ;
-            rdfs:label "El Oro"@es .
-
-### Provincia: El Oro
-:Provincia_ElOro rdf:type owl:NamedIndividual ,
-                     :Provincia ;
-            :provincia_de :Pais1 ;
-            :nombre_provincia "El Oro"^^xsd:string ;
-            rdfs:label "El Oro"@es .
-
-### Provincia: Pichincha
-:Provincia_Pichincha rdf:type owl:NamedIndividual ,
-                          :Provincia ;
-                 :provincia_de :Pais1 ;
-                 :nombre_provincia "Pichincha"^^xsd:string ;
-                 rdfs:label "Pichincha"@es .
-
-### Provincia: Guayas
-:Provincia_Guayas rdf:type owl:NamedIndividual ,
-                       :Provincia ;
-              :provincia_de :Pais1 ;
-              :nombre_provincia "Guayas"^^xsd:string ;
-              rdfs:label "Guayas"@es .
-
-### Provincia: Azuay
-:Provincia_Azuay rdf:type owl:NamedIndividual ,
-                      :Provincia ;
-             :provincia_de :Pais1 ;
-             :nombre_provincia "Azuay"^^xsd:string ;
-             rdfs:label "Azuay"@es .
-
-### Provincia: Manabí
-:Provincia_Manabi rdf:type owl:NamedIndividual ,
-                       :Provincia ;
-              :provincia_de :Pais1 ;
-              :nombre_provincia "Manabí"^^xsd:string ;
-              rdfs:label "Manabí"@es .
-
-### Provincia: Loja
-:Provincia_Loja rdf:type owl:NamedIndividual ,
-                      :Provincia ;
-             :provincia_de :Pais1 ;
-             :nombre_provincia "Loja"^^xsd:string ;
-             rdfs:label "Loja"@es .
-
-### Provincia: Santo Domingo de los Tsáchilas
-:Provincia_SantoDomingo rdf:type owl:NamedIndividual ,
-                               :Provincia ;
-                      :provincia_de :Pais1 ;
-                      :nombre_provincia "Santo Domingo de los Tsáchilas"^^xsd:string ;
-                      rdfs:label "Santo Domingo de los Tsáchilas"@es .
-
-### Provincia: Esmeraldas
-:Provincia_Esmeraldas rdf:type owl:NamedIndividual ,
-                            :Provincia ;
-                   :provincia_de :Pais1 ;
-                   :nombre_provincia "Esmeraldas"^^xsd:string ;
-                   rdfs:label "Esmeraldas"@es .
-
-### Provincia: Tungurahua
-:Provincia_Tungurahua rdf:type owl:NamedIndividual ,
-                            :Provincia ;
-                   :provincia_de :Pais1 ;
-                   :nombre_provincia "Tungurahua"^^xsd:string ;
-                   rdfs:label "Tungurahua"@es .
-
-### Provincia: Imbabura
-:Provincia_Imbabura rdf:type owl:NamedIndividual ,
-                           :Provincia ;
-                  :provincia_de :Pais1 ;
-                  :nombre_provincia "Imbabura"^^xsd:string ;
-                  rdfs:label "Imbabura"@es .
-
-### Provincia: Chimborazo
-:Provincia_Chimborazo rdf:type owl:NamedIndividual ,
-                            :Provincia ;
-                   :provincia_de :Pais1 ;
-                   :nombre_provincia "Chimborazo"^^xsd:string ;
-                   rdfs:label "Chimborazo"@es .
-
-### Provincia: Cotopaxi
-:Provincia_Cotopaxi rdf:type owl:NamedIndividual ,
-                          :Provincia ;
-                 :provincia_de :Pais1 ;
-                 :nombre_provincia "Cotopaxi"^^xsd:string ;
-                 rdfs:label "Cotopaxi"@es .
-
-### Provincia: Los Ríos
-:Provincia_LosRios rdf:type owl:NamedIndividual ,
-                         :Provincia ;
-                :provincia_de :Pais1 ;
-                :nombre_provincia "Los Ríos"^^xsd:string ;
-                rdfs:label "Los Ríos"@es .
-
-### Provincia: Manabí
-:Provincia_Manabi rdf:type owl:NamedIndividual ,
-                       :Provincia ;
-              :provincia_de :Pais1 ;
-              :nombre_provincia "Manabí"^^xsd:string ;
-              rdfs:label "Manabí"@es .
-
-### Provincia: Sucumbíos
-:Provincia_Sucumbios rdf:type owl:NamedIndividual ,
-                           :Provincia ;
-                  :provincia_de :Pais1 ;
-                  :nombre_provincia "Sucumbíos"^^xsd:string ;
-                  rdfs:label "Sucumbíos"@es .
-
-### Provincia: Orellana
-:Provincia_Orellana rdf:type owl:NamedIndividual ,
-                          :Provincia ;
-                 :provincia_de :Pais1 ;
-                 :nombre_provincia "Orellana"^^xsd:string ;
-                 rdfs:label "Orellana"@es .
-
-### Provincia: Napo
-:Provincia_Napo rdf:type owl:NamedIndividual ,
-                      :Provincia ;
-             :provincia_de :Pais1 ;
-             :nombre_provincia "Napo"^^xsd:string ;
-             rdfs:label "Napo"@es .
-
-### Provincia: Pastaza
-:Provincia_Pastaza rdf:type owl:NamedIndividual ,
-                         :Provincia ;
-                :provincia_de :Pais1 ;
-                :nombre_provincia "Pastaza"^^xsd:string ;
-                rdfs:label "Pastaza"@es .
-
-### Provincia: Morona Santiago
-:Provincia_MoronaSantiago rdf:type owl:NamedIndividual ,
-                                  :Provincia ;
-                         :provincia_de :Pais1 ;
-                         :nombre_provincia "Morona Santiago"^^xsd:string ;
-                         rdfs:label "Morona Santiago"@es .
-
-
+         :nombre_barrio "Piñas" ;
+         rdfs:label "Piñas"@es .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Agente1
@@ -466,16 +324,10 @@
         :titulo "GRAN OFERTA"^^xsd:string .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Barrio1
-:Barrio1 rdf:type owl:NamedIndividual ,
-                  :Barrios ;
-         :nombre_barrio "Piñas Grande"^^xsd:string ;
-         rdfs:label "Piñas Grande"@es .
-
-
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Barrio2
 :Barrio2 rdf:type owl:NamedIndividual ,
                   :Barrios ;
+         :barrio_de :Parroquia1 ;
          :nombre_barrio "San Jacinto"^^xsd:string ;
          rdfs:label "San Jacinto"@es .
 
@@ -483,6 +335,14 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Calefaccion
 :Calefaccion rdf:type owl:NamedIndividual ,
                       :Amenities .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton1
+:Canton1 rdf:type owl:NamedIndividual ,
+                  :Canton ;
+         :canton_de :Provincia1 ;
+         :nombre_canton "Machala"^^xsd:string ;
+         rdfs:label "Machala"@es .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Direccion1
@@ -498,7 +358,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Direccion2
 :Direccion2 rdf:type owl:NamedIndividual ,
                      :Ubicacion ;
-            :en_el_barrio :Barrio1 ;
+            :barrio_de :Parroquia3 ;
             :direccion "Juan José Loayza y Av. Teodoro Ochoa" ;
             :latitud "-3.667791"^^xsd:double ;
             :longitud "-79.695946"^^xsd:double ;
@@ -585,6 +445,165 @@
                 :Pais ;
        :nombre_pais "Ecuador"^^xsd:string ;
        rdfs:label "Ecuador"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Parroquia1
+:Parroquia1 rdf:type owl:NamedIndividual ,
+                     :Parroquia ;
+            :parroquia_de :Canton1 ;
+            :nombre_parroquia "Jambeli"^^xsd:string ;
+            rdfs:label "Jambeli"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Parroquia3
+:Parroquia3 rdf:type owl:NamedIndividual ,
+                     :Barrios ;
+            :nombre_barrio "Piñas Grande"^^xsd:string ;
+            rdfs:label "Piñas Grande"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia1
+:Provincia1 rdf:type owl:NamedIndividual ,
+                     :Provincia ;
+            :provincia_de :Pais1 ;
+            :nombre_provincia "El Oro"^^xsd:string ;
+            rdfs:label "El Oro"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Azuay
+:Provincia_Azuay rdf:type owl:NamedIndividual ,
+                          :Provincia ;
+                 :provincia_de :Pais1 ;
+                 :nombre_provincia "Azuay"^^xsd:string ;
+                 rdfs:label "Azuay"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Chimborazo
+:Provincia_Chimborazo rdf:type owl:NamedIndividual ,
+                               :Provincia ;
+                      :provincia_de :Pais1 ;
+                      :nombre_provincia "Chimborazo"^^xsd:string ;
+                      rdfs:label "Chimborazo"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Cotopaxi
+:Provincia_Cotopaxi rdf:type owl:NamedIndividual ,
+                             :Provincia ;
+                    :provincia_de :Pais1 ;
+                    :nombre_provincia "Cotopaxi"^^xsd:string ;
+                    rdfs:label "Cotopaxi"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Esmeraldas
+:Provincia_Esmeraldas rdf:type owl:NamedIndividual ,
+                               :Provincia ;
+                      :provincia_de :Pais1 ;
+                      :nombre_provincia "Esmeraldas"^^xsd:string ;
+                      rdfs:label "Esmeraldas"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Guayas
+:Provincia_Guayas rdf:type owl:NamedIndividual ,
+                           :Provincia ;
+                  :provincia_de :Pais1 ;
+                  :nombre_provincia "Guayas"^^xsd:string ;
+                  rdfs:label "Guayas"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Imbabura
+:Provincia_Imbabura rdf:type owl:NamedIndividual ,
+                             :Provincia ;
+                    :provincia_de :Pais1 ;
+                    :nombre_provincia "Imbabura"^^xsd:string ;
+                    rdfs:label "Imbabura"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Loja
+:Provincia_Loja rdf:type owl:NamedIndividual ,
+                         :Provincia ;
+                :provincia_de :Pais1 ;
+                :nombre_provincia "Loja"^^xsd:string ;
+                rdfs:label "Loja"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_LosRios
+:Provincia_LosRios rdf:type owl:NamedIndividual ,
+                            :Provincia ;
+                   :provincia_de :Pais1 ;
+                   :nombre_provincia "Los Ríos"^^xsd:string ;
+                   rdfs:label "Los Ríos"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Manabi
+:Provincia_Manabi rdf:type owl:NamedIndividual ,
+                           :Provincia ;
+                  :provincia_de :Pais1 ;
+                  :nombre_provincia "Manabí"^^xsd:string ;
+                  rdfs:label "Manabí"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_MoronaSantiago
+:Provincia_MoronaSantiago rdf:type owl:NamedIndividual ,
+                                   :Provincia ;
+                          :provincia_de :Pais1 ;
+                          :nombre_provincia "Morona Santiago"^^xsd:string ;
+                          rdfs:label "Morona Santiago"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Napo
+:Provincia_Napo rdf:type owl:NamedIndividual ,
+                         :Provincia ;
+                :provincia_de :Pais1 ;
+                :nombre_provincia "Napo"^^xsd:string ;
+                rdfs:label "Napo"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Orellana
+:Provincia_Orellana rdf:type owl:NamedIndividual ,
+                             :Provincia ;
+                    :provincia_de :Pais1 ;
+                    :nombre_provincia "Orellana"^^xsd:string ;
+                    rdfs:label "Orellana"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Pastaza
+:Provincia_Pastaza rdf:type owl:NamedIndividual ,
+                            :Provincia ;
+                   :provincia_de :Pais1 ;
+                   :nombre_provincia "Pastaza"^^xsd:string ;
+                   rdfs:label "Pastaza"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Pichincha
+:Provincia_Pichincha rdf:type owl:NamedIndividual ,
+                              :Provincia ;
+                     :provincia_de :Pais1 ;
+                     :nombre_provincia "Pichincha"^^xsd:string ;
+                     rdfs:label "Pichincha"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_SantoDomingo
+:Provincia_SantoDomingo rdf:type owl:NamedIndividual ,
+                                 :Provincia ;
+                        :provincia_de :Pais1 ;
+                        :nombre_provincia "Santo Domingo de los Tsáchilas"^^xsd:string ;
+                        rdfs:label "Santo Domingo de los Tsáchilas"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Sucumbios
+:Provincia_Sucumbios rdf:type owl:NamedIndividual ,
+                              :Provincia ;
+                     :provincia_de :Pais1 ;
+                     :nombre_provincia "Sucumbíos"^^xsd:string ;
+                     rdfs:label "Sucumbíos"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Provincia_Tungurahua
+:Provincia_Tungurahua rdf:type owl:NamedIndividual ,
+                               :Provincia ;
+                      :provincia_de :Pais1 ;
+                      :nombre_provincia "Tungurahua"^^xsd:string ;
+                      rdfs:label "Tungurahua"@es .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
