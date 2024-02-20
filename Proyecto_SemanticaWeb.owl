@@ -9,6 +9,14 @@
 <http://www.utmachala.edu.ec/grupo1/inmobiliaria> rdf:type owl:Ontology .
 
 #################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/perteneciente_a
+:perteneciente_a rdf:type owl:AnnotationProperty .
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
@@ -280,14 +288,6 @@
 #    Individuals
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Barrio3
-:Barrio3 rdf:type owl:NamedIndividual ,
-                  :Barrios ;
-         :barrio_de :Parroquia3 ;
-         :nombre_barrio "Portete"^^xsd:string ;
-         rdfs:label "Portete"@es .
-
-
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Agente1
 :Agente1 rdf:type owl:NamedIndividual ,
                   :Agentes ;
@@ -332,11 +332,17 @@
          rdfs:label "San Jacinto"@es .
 
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Barrio3
+:Barrio3 rdf:type owl:NamedIndividual ,
+                  :Barrios ;
+         :barrio_de :Parroquia3 ;
+         :nombre_barrio "Portete"^^xsd:string ;
+         rdfs:label "Portete"@es .
+
+
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Calefaccion
 :Calefaccion rdf:type owl:NamedIndividual ,
                       :Amenities .
-
-
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton2
@@ -345,6 +351,111 @@
          :canton_de :Provincia1 ;
          :nombre_barrio "Piñas" ;
          rdfs:label "Piñas"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Catamayo
+:Canton_Catamayo rdf:type owl:NamedIndividual ,
+                          :Canton ;
+                 :nombre_canton "Catamayo"^^xsd:string ;
+                 :perteneciente_a :Provincia_Loja ;
+                 rdfs:label "Catamayo"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Cayambe
+:Canton_Cayambe rdf:type owl:NamedIndividual ,
+                         :Canton ;
+                :nombre_canton "Cayambe"^^xsd:string ;
+                :perteneciente_a :Provincia_Pichincha ;
+                rdfs:label "Cayambe"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Cuenca
+:Canton_Cuenca rdf:type owl:NamedIndividual ,
+                        :Canton ;
+               :nombre_canton "Cuenca"^^xsd:string ;
+               :perteneciente_a :Provincia_Azuay ;
+               rdfs:label "Cuenca"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Duran
+:Canton_Duran rdf:type owl:NamedIndividual ,
+                       :Canton ;
+              :nombre_canton "Duran"^^xsd:string ;
+              :perteneciente_a :Provincia_Guayas ;
+              rdfs:label "Duran"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Gualaceo
+:Canton_Gualaceo rdf:type owl:NamedIndividual ,
+                          :Canton ;
+                 :nombre_canton "Gualaceo"^^xsd:string ;
+                 :perteneciente_a :Provincia_Azuay ;
+                 rdfs:label "Gualaceo"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Guayaquil
+:Canton_Guayaquil rdf:type owl:NamedIndividual ,
+                           :Canton ;
+                  :nombre_canton "Guayaquil"^^xsd:string ;
+                  :perteneciente_a :Provincia_Guayas ;
+                  rdfs:label "Guayaquil"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_LaConcordia
+:Canton_LaConcordia rdf:type owl:NamedIndividual ,
+                             :Canton ;
+                    :nombre_canton "La Concordia"^^xsd:string ;
+                    :perteneciente_a :Provincia_SantoDomingo ;
+                    rdfs:label "La Concordia"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Loja
+:Canton_Loja rdf:type owl:NamedIndividual ,
+                      :Canton ;
+             :nombre_canton "Loja"^^xsd:string ;
+             :perteneciente_a :Provincia_Loja ;
+             rdfs:label "Loja"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Machala
+:Canton_Machala rdf:type owl:NamedIndividual ,
+                         :Canton ;
+                :canton_de :Provincia1 ;
+                :nombre_canton "Machala"^^xsd:string ;
+                :perteneciente_a :Provincia_ElOro ;
+                rdfs:label "Machala"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Manta
+:Canton_Manta rdf:type owl:NamedIndividual ,
+                       :Canton ;
+              :nombre_canton "Manta"^^xsd:string ;
+              :perteneciente_a :Provincia_Manabi ;
+              rdfs:label "Manta"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Portoviejo
+:Canton_Portoviejo rdf:type owl:NamedIndividual ,
+                            :Canton ;
+                   :nombre_canton "Portoviejo"^^xsd:string ;
+                   :perteneciente_a :Provincia_Manabi ;
+                   rdfs:label "Portoviejo"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_Quito
+:Canton_Quito rdf:type owl:NamedIndividual ,
+                       :Canton ;
+              :nombre_canton "Quito"^^xsd:string ;
+              :perteneciente_a :Provincia_Pichincha ;
+              rdfs:label "Quito"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton_SantoDomingo
+:Canton_SantoDomingo rdf:type owl:NamedIndividual ,
+                              :Canton ;
+                     :nombre_canton "Santo Domingo"^^xsd:string ;
+                     :perteneciente_a :Provincia_SantoDomingo ;
+                     rdfs:label "Santo Domingo"@es .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Direccion1
@@ -452,7 +563,6 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Parroquia1
 :Parroquia1 rdf:type owl:NamedIndividual ,
                      :Parroquia ;
-            :parroquia_de :Canton1 ;
             :nombre_parroquia "Jambeli"^^xsd:string ;
             rdfs:label "Jambeli"@es .
 
@@ -607,97 +717,6 @@
                       :provincia_de :Pais1 ;
                       :nombre_provincia "Tungurahua"^^xsd:string ;
                       rdfs:label "Tungurahua"@es .
-
-### Cantones of El Oro Province
-:Canton_Machala rdf:type owl:NamedIndividual ,
-                      :Canton ;
-             :perteneciente_a :Provincia_ElOro ;
-             :nombre_canton "Machala"^^xsd:string ;
-             rdfs:label "Machala"@es .
-
-:Canton_Piñas rdf:type owl:NamedIndividual ,
-                     :Canton ;
-            :perteneciente_a :Provincia_ElOro ;
-            :nombre_canton "Piñas"^^xsd:string ;
-            rdfs:label "Piñas"@es .
-
-### Cantones of Pichincha Province
-:Canton_Quito rdf:type owl:NamedIndividual ,
-                     :Canton ;
-            :perteneciente_a :Provincia_Pichincha ;
-            :nombre_canton "Quito"^^xsd:string ;
-            rdfs:label "Quito"@es .
-
-:Canton_Cayambe rdf:type owl:NamedIndividual ,
-                      :Canton ;
-             :perteneciente_a :Provincia_Pichincha ;
-             :nombre_canton "Cayambe"^^xsd:string ;
-             rdfs:label "Cayambe"@es .
-
-### Cantones of Guayas Province
-:Canton_Guayaquil rdf:type owl:NamedIndividual ,
-                         :Canton ;
-                :perteneciente_a :Provincia_Guayas ;
-                :nombre_canton "Guayaquil"^^xsd:string ;
-                rdfs:label "Guayaquil"@es .
-
-:Canton_Duran rdf:type owl:NamedIndividual ,
-                    :Canton ;
-           :perteneciente_a :Provincia_Guayas ;
-           :nombre_canton "Duran"^^xsd:string ;
-           rdfs:label "Duran"@es .
-
-### Cantones of Azuay Province
-:Canton_Cuenca rdf:type owl:NamedIndividual ,
-                      :Canton ;
-             :perteneciente_a :Provincia_Azuay ;
-             :nombre_canton "Cuenca"^^xsd:string ;
-             rdfs:label "Cuenca"@es .
-
-:Canton_Gualaceo rdf:type owl:NamedIndividual ,
-                       :Canton ;
-              :perteneciente_a :Provincia_Azuay ;
-              :nombre_canton "Gualaceo"^^xsd:string ;
-              rdfs:label "Gualaceo"@es .
-
-### Cantones of Manabí Province
-:Canton_Portoviejo rdf:type owl:NamedIndividual ,
-                          :Canton ;
-                 :perteneciente_a :Provincia_Manabi ;
-                 :nombre_canton "Portoviejo"^^xsd:string ;
-                 rdfs:label "Portoviejo"@es .
-
-:Canton_Manta rdf:type owl:NamedIndividual ,
-                     :Canton ;
-            :perteneciente_a :Provincia_Manabi ;
-            :nombre_canton "Manta"^^xsd:string ;
-            rdfs:label "Manta"@es .
-
-### Cantones of Loja Province
-:Canton_Loja rdf:type owl:NamedIndividual ,
-                    :Canton ;
-           :perteneciente_a :Provincia_Loja ;
-           :nombre_canton "Loja"^^xsd:string ;
-           rdfs:label "Loja"@es .
-
-:Canton_Catamayo rdf:type owl:NamedIndividual ,
-                       :Canton ;
-              :perteneciente_a :Provincia_Loja ;
-              :nombre_canton "Catamayo"^^xsd:string ;
-              rdfs:label "Catamayo"@es .
-
-### Cantones of Santo Domingo de los Tsáchilas Province
-:Canton_SantoDomingo rdf:type owl:NamedIndividual ,
-                               :Canton ;
-                      :perteneciente_a :Provincia_SantoDomingo ;
-                      :nombre_canton "Santo Domingo"^^xsd:string ;
-                      rdfs:label "Santo Domingo"@es .
-
-:Canton_LaConcordia rdf:type owl:NamedIndividual ,
-                            :Canton ;
-                   :perteneciente_a :Provincia_SantoDomingo ;
-                   :nombre_canton "La Concordia"^^xsd:string ;
-                   rdfs:label "La Concordia"@es .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
