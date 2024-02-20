@@ -21,13 +21,15 @@
 #################################################################
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/barrio_de
-:barrio_de rdf:type owl:ObjectProperty ;
+:barrio_de rdf:type owl:ObjectProperty ,
+                    owl:TransitiveProperty ;
            rdfs:domain :Parroquia ;
            rdfs:range :Barrios .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/canton_de
-:canton_de rdf:type owl:ObjectProperty ;
+:canton_de rdf:type owl:ObjectProperty ,
+                    owl:TransitiveProperty ;
            rdfs:domain :Provincia ;
            rdfs:range :Canton .
 
@@ -39,7 +41,8 @@
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/es
-:es rdf:type owl:ObjectProperty ;
+:es rdf:type owl:ObjectProperty ,
+             owl:SymmetricProperty ;
     rdfs:domain :Casas ,
                 :Lotes ;
     rdfs:range :Inmuebles .
@@ -52,13 +55,15 @@
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/parroquia_de
-:parroquia_de rdf:type owl:ObjectProperty ;
+:parroquia_de rdf:type owl:ObjectProperty ,
+                       owl:TransitiveProperty ;
               rdfs:domain :Canton ;
               rdfs:range :Parroquia .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/provincia_de
-:provincia_de rdf:type owl:ObjectProperty ;
+:provincia_de rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ;
               rdfs:domain :Pais ;
               rdfs:range :Provincia .
 
