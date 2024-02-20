@@ -12,12 +12,6 @@
 #    Object Properties
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#parroquia_de
-:parroquia_de rdf:type owl:ObjectProperty ;
-              rdfs:domain :Canton ;
-              rdfs:range :Parroquia .
-
-
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/barrio_de
 :barrio_de rdf:type owl:ObjectProperty ;
            rdfs:domain :Parroquia ;
@@ -47,6 +41,12 @@
 :oferta rdf:type owl:ObjectProperty ;
         rdfs:domain :Avisos ;
         rdfs:range :Inmuebles .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/parroquia_de
+:parroquia_de rdf:type owl:ObjectProperty ;
+              rdfs:domain :Canton ;
+              rdfs:range :Parroquia .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/provincia_de
@@ -280,12 +280,12 @@
 #    Individuals
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Canton2
-:Canton2 rdf:type owl:NamedIndividual ,
-                  :Canton ;
-         :canton_de :Provincia1 ;
-         :nombre_barrio "Piñas" ;
-         rdfs:label "Piñas"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Barrio3
+:Barrio3 rdf:type owl:NamedIndividual ,
+                  :Barrios ;
+         :barrio_de :Parroquia3 ;
+         :nombre_barrio "Portete"^^xsd:string ;
+         rdfs:label "Portete"@es .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Agente1
@@ -345,6 +345,14 @@
          rdfs:label "Machala"@es .
 
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Canton2
+:Canton2 rdf:type owl:NamedIndividual ,
+                  :Canton ;
+         :canton_de :Provincia1 ;
+         :nombre_barrio "Piñas" ;
+         rdfs:label "Piñas"@es .
+
+
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Direccion1
 :Direccion1 rdf:type owl:NamedIndividual ,
                      :Ubicacion ;
@@ -358,7 +366,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Direccion2
 :Direccion2 rdf:type owl:NamedIndividual ,
                      :Ubicacion ;
-            :barrio_de :Parroquia3 ;
+            :situado_en :Barrio3 ;
             :direccion "Juan José Loayza y Av. Teodoro Ochoa" ;
             :latitud "-3.667791"^^xsd:double ;
             :longitud "-79.695946"^^xsd:double ;
@@ -457,8 +465,9 @@
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Parroquia3
 :Parroquia3 rdf:type owl:NamedIndividual ,
-                     :Barrios ;
-            :nombre_barrio "Piñas Grande"^^xsd:string ;
+                     :Parroquia ;
+            :parroquia_de :Canton2 ;
+            :nombre_parroquia "Piñas Grande"^^xsd:string ;
             rdfs:label "Piñas Grande"@es .
 
 
