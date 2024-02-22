@@ -20,12 +20,6 @@
 #    Object Properties
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#situada_en_el_barrio
-:situada_en_el_barrio rdf:type owl:ObjectProperty ;
-                      rdfs:domain :Ubicacion ;
-                      rdfs:range :Barrios .
-
-
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/barrio_de
 :barrio_de rdf:type owl:ObjectProperty ,
                     owl:TransitiveProperty ;
@@ -80,8 +74,15 @@
              rdfs:range :Inmuebles .
 
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/situada_en_el_barrio
+:situada_en_el_barrio rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Ubicacion ;
+                      rdfs:range :Barrios .
+
+
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/situado_en
-:situado_en rdf:type owl:ObjectProperty ;
+:situado_en rdf:type owl:ObjectProperty ,
+                     owl:TransitiveProperty ;
             rdfs:domain :Inmuebles ;
             rdfs:range :Ubicacion .
 
@@ -367,8 +368,7 @@
 :Barrio2 rdf:type owl:NamedIndividual ,
                   :Barrios ;
          :barrio_de :Parroquia1 ;
-         :nombre_barrio "San Jacinto"^^xsd:string ;
-         rdfs:label "San Jacinto"@es .
+         :nombre_barrio "San Jacinto"^^xsd:string .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Barrio3
@@ -383,8 +383,7 @@
 :Barrio4 rdf:type owl:NamedIndividual ,
                   :Barrios ;
          :barrio_de :Parroquia4 ;
-         :nombre_barrio "La Palestina"^^xsd:string ;
-         rdfs:label "La Palestina"@es .
+         :nombre_barrio "La Palestina"^^xsd:string .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Calefaccion
@@ -559,8 +558,7 @@
             :situada_en_el_barrio :Barrio2 ;
             :direccion "Av. de Las Palmeras y 9na. Sur" ;
             :latitud "-3.26105"^^xsd:double ;
-            :longitud "-79.96889"^^xsd:double ;
-            rdfs:label "Direccion en Machala"@es .
+            :longitud "-79.96889"^^xsd:double .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Direccion2
