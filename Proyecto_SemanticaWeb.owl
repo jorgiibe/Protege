@@ -293,6 +293,144 @@
 #    Individuals
 #################################################################
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Agente_Luis_Sanchez
+:Agente_Luis_Sanchez rdf:type owl:NamedIndividual ,
+                              :Agentes ;
+                     :responsable :Lote_en_Esmeraldas ;
+                     :nombre_agente_inmobiliario "Luis Sanchez" ;
+                     rdfs:label "Agente Luis Sanchez" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Amazonas
+:Amazonas rdf:type owl:NamedIndividual ,
+                   :Barrios ;
+          :barrio_de :Eloy_Alfaro ;
+          :nombre_barrio "Amazonas" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Aviso2
+:Aviso2 rdf:type owl:NamedIndividual ,
+                 :Avisos ;
+        :oferta :Lote_en_Esmeraldas ;
+        :descripcion "Terreno ubicado a 2 km de la playa" ;
+        :fecha_fin_publicacion "2024-02-26T18:00:00"^^xsd:dateTime ;
+        :fecha_publicacion "2024-02-09T18:00:00"^^xsd:dateTime ;
+        :titulo "Terreno de oportunidad" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Camarones
+:Camarones rdf:type owl:NamedIndividual ,
+                    :Parroquia ;
+           :parroquia_de :Provincia_Esmeraldas ;
+           :nombre_parroquia "Camarones" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Casa_en_Duran
+:Casa_en_Duran rdf:type owl:NamedIndividual ,
+                        :Casas ,
+                        :Inmuebles ;
+               :dispone_servicios_basicos :Alcantarillado ,
+                                          :Energia_Electrica ;
+               :situado_en :Direccion_en_Duran ;
+               :tiene_amenities :Aire_Acondicionado ;
+               :cantidad_habitaciones 4 ;
+               :moneda "Dolar" ;
+               :precio "130000.0"^^xsd:double ;
+               :superficie_ancho "10.0"^^xsd:double ;
+               :superficie_cubierta "150.0"^^xsd:double ;
+               :superficie_largo "15.0"^^xsd:double ;
+               rdfs:label "Casa en Duran" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Casa_en_Guayaquil
+:Casa_en_Guayaquil rdf:type owl:NamedIndividual ,
+                            :Casas ,
+                            :Inmuebles ;
+                   :dispone_servicios_basicos :Alcantarillado ,
+                                              :Energia_Electrica ;
+                   :situado_en :Direcion_en_Guayaquil ;
+                   :cantidad_habitaciones 2 ;
+                   :moneda "Dolar" ;
+                   :precio "120000.0"^^xsd:double ;
+                   :superficie_ancho "7.0"^^xsd:double ;
+                   :superficie_cubierta "220.4"^^xsd:double ;
+                   :superficie_largo "20.0"^^xsd:double ;
+                   rdfs:label "Casa en Guayaquil" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Direccion_en_Duran
+:Direccion_en_Duran rdf:type owl:NamedIndividual ,
+                             :Ubicacion ;
+                    :situado_en :Amazonas ;
+                    :direccion "Av. amazonas y calle M3" ;
+                    :latitud "-2.165745"^^xsd:double ;
+                    :longitud "-79.833574"^^xsd:double ;
+                    rdfs:label "Direccion en Duran" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Direccion_en_Esmeraldas
+:Direccion_en_Esmeraldas rdf:type owl:NamedIndividual ,
+                                  :Ubicacion ;
+                         :situado_en :Playita_Norte ;
+                         :direccion "Calle pedro vicente maldonado" ;
+                         :latitud "0.9765457318396071"^^xsd:double ;
+                         :longitud "-79.6535075243856"^^xsd:double ;
+                         rdfs:label "Direccion en Esmeraldas" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Direcion_en_Guayaquil
+:Direcion_en_Guayaquil rdf:type owl:NamedIndividual ,
+                                :Ubicacion ;
+                       :situado_en :Febres_Cordero ;
+                       :direccion "AV. PASAJE 1D Y PASEO 47" ;
+                       :latitud "-2.2361853430304603"^^xsd:double ;
+                       :longitud "79.89505927353379"^^xsd:double ;
+                       rdfs:label "Direccion en Guayaquil" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Eloy_Alfaro
+:Eloy_Alfaro rdf:type owl:NamedIndividual ,
+                      :Parroquia ;
+             :parroquia_de :Canton_Duran ;
+             :nombre_parroquia "Eloy Alfaro" ;
+             rdfs:label "Eloy Alfaro" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Febres_Cordero
+:Febres_Cordero rdf:type owl:NamedIndividual ,
+                         :Parroquia ;
+                :parroquia_de :Canton_Guayaquil ;
+                :nombre_parroquia "Febres Cordero" ;
+                rdfs:label "Febres Cordero" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Lote_en_Esmeraldas
+:Lote_en_Esmeraldas rdf:type owl:NamedIndividual ,
+                             :Inmuebles ,
+                             :Lotes ;
+                    :dispone_servicios_basicos :Alcantarillado ;
+                    :situado_en :Direccion_en_Esmeraldas ;
+                    :moneda "Dolar" ;
+                    :precio 20000 ;
+                    :superficie_ancho 5 ;
+                    :superficie_largo 10 ;
+                    rdfs:label "Lote en Esmeraldas" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Playita_Norte
+:Playita_Norte rdf:type owl:NamedIndividual ,
+                        :Barrios ;
+               :barrio_de :Camarones ;
+               :nombre_barrio "Playita Norte" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#Pradera
+:Pradera rdf:type owl:NamedIndividual ,
+                  :Barrios ;
+         :barrio_de :Febres_Cordero ;
+         :nombre_barrio "Pradera" .
+
+
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Agente1
 :Agente1 rdf:type owl:NamedIndividual ,
                   :Agentes ;
@@ -305,7 +443,8 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Agente2
 :Agente2 rdf:type owl:NamedIndividual ,
                   :Agentes ;
-         :responsable :Lote1 ;
+         :responsable :Casa_en_Guayaquil ,
+                      :Lote1 ;
          :nombre_agente_inmobiliario "Juan Perez"^^xsd:string ;
          rdfs:label "Agente Juan Perez"@es .
 
@@ -515,7 +654,8 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Energia_Electrica
 :Energia_Electrica rdf:type owl:NamedIndividual ,
                             :Servicios ;
-                   :tipo_servicio "Servicio Básico" .
+                   :tipo_servicio "Servicio Básico" ;
+                   rdfs:label "Energia Electrica" .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Gas
