@@ -20,12 +20,6 @@
 #    Object Properties
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliaria#situada_en_el_barrio
-:situada_en_el_barrio rdf:type owl:ObjectProperty ;
-                      rdfs:domain :Ubicacion ;
-                      rdfs:range :Barrios .
-
-
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/barrio_de
 :barrio_de rdf:type owl:ObjectProperty ,
                     owl:TransitiveProperty ;
@@ -78,6 +72,12 @@
 :responsable rdf:type owl:ObjectProperty ;
              rdfs:domain :Agentes ;
              rdfs:range :Inmuebles .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/situada_en_el_barrio
+:situada_en_el_barrio rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Ubicacion ;
+                      rdfs:range :Barrios .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/situado_en
@@ -333,7 +333,8 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Alcantarillado
 :Alcantarillado rdf:type owl:NamedIndividual ,
                          :Servicios ;
-                :tipo_servicio "Servicio Básico" .
+                :tipo_servicio "Servicio Básico" ;
+                rdfs:label "Alcantarillado" .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Amazonas
@@ -368,7 +369,7 @@
                   :Barrios ;
          :barrio_de :Parroquia1 ;
          :nombre_barrio "San Jacinto"^^xsd:string ;
-         rdfs:label "San Jacinto"@es .
+         rdfs:label "San Jacinto"^^xsd:string .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Barrio3
@@ -587,7 +588,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Direccion_en_Duran
 :Direccion_en_Duran rdf:type owl:NamedIndividual ,
                              :Ubicacion ;
-                    :situada_en_el_barrio :Amazonas ;
+                    :situada_en_el_barrio :Barrio2 ;
                     :direccion "Av. amazonas y calle M3" ;
                     :latitud "-2.165745"^^xsd:double ;
                     :longitud "-79.833574"^^xsd:double ;
@@ -640,7 +641,8 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Gas
 :Gas rdf:type owl:NamedIndividual ,
               :Servicios ;
-     :tipo_servicio "Servicio Básico" .
+     :tipo_servicio "Servicio Básico" ;
+     rdfs:label "Gas" .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Inmobiliaria1
