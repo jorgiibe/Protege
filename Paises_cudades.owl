@@ -31,6 +31,12 @@
         rdfs:range :Inmuebles .
 
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#responsable
+:responsable rdf:type owl:ObjectProperty ;
+             rdfs:domain :Agentes ;
+             rdfs:range :Inmuebles .
+
+
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#tiene_amenities
 :tiene_amenities rdf:type owl:ObjectProperty ;
                  rdfs:domain :Casas ;
@@ -237,7 +243,7 @@
                 :Casas ,
                 :Inmuebles ;
        :seIncluyeEn :direccion3 ;
-       :cantidad_habitaciones "4.0"^^xsd:double ;
+       :cantidad_habitaciones 4 ;
        :medida_ancho "10.0"^^xsd:double ;
        :medida_largo "20.0"^^xsd:double ;
        :moneda "Dolar" ;
@@ -432,12 +438,14 @@
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#agente1
 :agente1 rdf:type owl:NamedIndividual ,
                   :Agentes ;
+         :responsable :Casa1 ;
          rdfs:label "Agente Raul Cabrera" .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#agente_juan_perez
 :agente_juan_perez rdf:type owl:NamedIndividual ,
                             :Agentes ;
+                   :responsable :Lote2 ;
                    rdfs:label "Agente Raul perez" .
 
 
@@ -481,8 +489,16 @@
 :Aviso1 rdf:type owl:NamedIndividual ,
                  :Avisos ;
         :oferta :Casa1 ,
-                :Lote2 ;
+                :Casa_Mosquera ;
         rdfs:label "Gran oferta de casas"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Aviso2
+:Aviso2 rdf:type owl:NamedIndividual ,
+                 :Avisos ;
+        :oferta :Casa_Mosquera ,
+                :Lote2 ;
+        rdfs:label "Gran oferta de Lotes"@es .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Inmobiliaria1
