@@ -180,6 +180,8 @@
 :Casa1 rdf:type owl:NamedIndividual ,
                 :Casas ;
        :seIncluyeEn :Direccion2 ;
+       :cantidad_habitaciones 3 ;
+       :medida_ancho 10 ;
        rdfs:label "Casa Berru"@es .
 
 
@@ -194,6 +196,13 @@
 :Casa_Aguirre rdf:type owl:NamedIndividual ,
                        :Casas ;
               :seIncluyeEn :direccion4 ;
+              :cantidad_habitaciones 2 ;
+              :medida_ancho "10.0"^^xsd:double ;
+              :medida_largo "20.0"^^xsd:double ;
+              :moneda "Dolar"^^xsd:string ;
+              :precio "60000.0"^^xsd:double ;
+              :superficie_cubierta "150.0"^^xsd:double ;
+              :superficie_lote "200.0"^^xsd:double ;
               rdfs:label "Casa Aguirre"@es .
 
 
