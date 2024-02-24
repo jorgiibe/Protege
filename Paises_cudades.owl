@@ -12,7 +12,7 @@
 #    Object Properties
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#seIncluyeEn
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#seIncluyeEn
 :seIncluyeEn rdf:type owl:ObjectProperty ,
                       owl:TransitiveProperty ;
              rdfs:domain :Lugar ;
@@ -23,63 +23,63 @@
 #    Data properties
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#cantidad_habitaciones
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#cantidad_habitaciones
 :cantidad_habitaciones rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#descripcion
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#descripcion
 :descripcion rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#direccion
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#direccion
 :direccion rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#fecha_fin_publicacion
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#fecha_fin_publicacion
 :fecha_fin_publicacion rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#fecha_publicacion
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#fecha_publicacion
 :fecha_publicacion rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#latitud
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#latitud
 :latitud rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#longitud
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#longitud
 :longitud rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#medida_ancho
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#medida_ancho
 :medida_ancho rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#medida_largo
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#medida_largo
 :medida_largo rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#moneda
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#moneda
 :moneda rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#precio
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#precio
 :precio rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#superficie_cubierta
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#superficie_cubierta
 :superficie_cubierta rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#superficie_lote
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#superficie_lote
 :superficie_lote rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#tipo_amenities
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#tipo_amenities
 :tipo_amenities rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#titulo
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#titulo
 :titulo rdf:type owl:DatatypeProperty .
 
 
@@ -87,62 +87,62 @@
 #    Classes
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Agentes
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Agentes
 :Agentes rdf:type owl:Class .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Amenities
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Amenities
 :Amenities rdf:type owl:Class .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Barrio
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Barrio
 :Barrio rdf:type owl:Class ;
         rdfs:subClassOf :Lugar .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Casas
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casas
 :Casas rdf:type owl:Class ;
        rdfs:subClassOf :Inmuebles .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Ciudad
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Ciudad
 :Ciudad rdf:type owl:Class ;
         rdfs:subClassOf :Lugar .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Inmuebles
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Inmuebles
 :Inmuebles rdf:type owl:Class .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Lotes
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lotes
 :Lotes rdf:type owl:Class ;
        rdfs:subClassOf :Inmuebles .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Lugar
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lugar
 :Lugar rdf:type owl:Class .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Pais
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Pais
 :Pais rdf:type owl:Class ;
       rdfs:subClassOf :Lugar .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Provincia
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Provincia
 :Provincia rdf:type owl:Class ;
            rdfs:subClassOf :Lugar .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Region
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Region
 :Region rdf:type owl:Class ;
         rdfs:subClassOf :Lugar .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Servicios
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Servicios
 :Servicios rdf:type owl:Class .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Ubicacion
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Ubicacion
 :Ubicacion rdf:type owl:Class ;
            rdfs:subClassOf :Lugar .
 
@@ -151,32 +151,32 @@
 #    Individuals
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Aire_Acondicionado
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Aire_Acondicionado
 :Aire_Acondicionado rdf:type owl:NamedIndividual ,
                              :Amenities ;
                     rdfs:label "Aire Acondicionado"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Alcantarillado
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Alcantarillado
 :Alcantarillado rdf:type owl:NamedIndividual ,
                          :Servicios ;
                 rdfs:label "Alcantarillado" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Azuay
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Azuay
 :Azuay rdf:type owl:NamedIndividual ,
                 :Provincia ;
        :seIncluyeEn :Sierra ;
        rdfs:label "Azuay"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Calefaccion
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Calefaccion
 :Calefaccion rdf:type owl:NamedIndividual ,
                       :Amenities ;
              rdfs:label "Calefaccion"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Casa1
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa1
 :Casa1 rdf:type owl:NamedIndividual ,
                 :Casas ;
        :seIncluyeEn :Direccion2 ;
@@ -190,7 +190,7 @@
        rdfs:label "Casa Berru"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Casa2
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa2
 :Casa2 rdf:type owl:NamedIndividual ,
                 :Casas ;
        :seIncluyeEn :direccion3 ;
@@ -204,7 +204,7 @@
        rdfs:label "Casa Farias"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Casa_Aguirre
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa_Aguirre
 :Casa_Aguirre rdf:type owl:NamedIndividual ,
                        :Casas ;
               :seIncluyeEn :direccion4 ;
@@ -218,7 +218,7 @@
               rdfs:label "Casa Aguirre"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Casa_Mosquera
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa_Mosquera
 :Casa_Mosquera rdf:type owl:NamedIndividual ,
                         :Casas ;
                :seIncluyeEn :Direccion1 ;
@@ -232,87 +232,87 @@
                rdfs:label "Casa Mosquera" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Cuenca
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Cuenca
 :Cuenca rdf:type owl:NamedIndividual ,
                  :Ciudad ;
         :seIncluyeEn :Azuay ;
         rdfs:label "Cuenca"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Direccion1
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Direccion1
 :Direccion1 rdf:type owl:NamedIndividual ,
                      :Ubicacion ;
             :seIncluyeEn :SanJacinto ;
             rdfs:label "9na Sur y Palmeras"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Direccion2
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Direccion2
 :Direccion2 rdf:type owl:NamedIndividual ,
                      :Ubicacion ;
             :seIncluyeEn :SantaElena ;
             rdfs:label "10 de Agosto y 9na Norte"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Duran
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Duran
 :Duran rdf:type owl:NamedIndividual ,
                 :Ciudad ;
        :seIncluyeEn :Guayas ;
        rdfs:label "Duran"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Ecuador
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Ecuador
 :Ecuador rdf:type owl:NamedIndividual ,
                   :Pais ;
          rdfs:label "Ecuador"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#ElGuabo
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#ElGuabo
 :ElGuabo rdf:type owl:NamedIndividual ,
                   :Ciudad ;
          :seIncluyeEn :ElOro ;
          rdfs:label "El Guabo"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#ElOro
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#ElOro
 :ElOro rdf:type owl:NamedIndividual ,
                 :Provincia ;
        :seIncluyeEn :costaUri ;
        rdfs:label "El Oro"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Energia_Electrica
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Energia_Electrica
 :Energia_Electrica rdf:type owl:NamedIndividual ,
                             :Servicios ;
                    rdfs:label "Energia Electrica" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Gas
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Gas
 :Gas rdf:type owl:NamedIndividual ,
               :Servicios ;
      rdfs:label "Gas" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Guayaquil
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Guayaquil
 :Guayaquil rdf:type owl:NamedIndividual ,
                     :Ciudad ;
            :seIncluyeEn :Guayas ;
            rdfs:label "Guayaquil"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Guayas
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Guayas
 :Guayas rdf:type owl:NamedIndividual ,
                  :Provincia ;
         :seIncluyeEn :costaUri ;
         rdfs:label "Guayas"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Internet
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Internet
 :Internet rdf:type owl:NamedIndividual ,
                    :Amenities ;
           rdfs:label "Internet"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Lote1
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lote1
 :Lote1 rdf:type owl:NamedIndividual ,
                 :Lotes ;
        :seIncluyeEn :direccion6 ;
@@ -324,7 +324,7 @@
        rdfs:label "Lote Mosquera"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Lote2
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lote2
 :Lote2 rdf:type owl:NamedIndividual ,
                 :Lotes ;
        :seIncluyeEn :direccion5 ;
@@ -336,84 +336,94 @@
        rdfs:label "Lote Figueroa"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Machala
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Machala
 :Machala rdf:type owl:NamedIndividual ,
                   :Ciudad ;
          :seIncluyeEn :ElOro ;
          rdfs:label "Machala"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Pasaje
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Pasaje
 :Pasaje rdf:type owl:NamedIndividual ,
                  :Ciudad ;
         :seIncluyeEn :ElOro ;
         rdfs:label "Pasaje"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#SanJacinto
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#SanJacinto
 :SanJacinto rdf:type owl:NamedIndividual ,
                      :Barrio ;
             :seIncluyeEn :Machala ;
             rdfs:label "San Jacinto"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#SantaElena
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#SantaElena
 :SantaElena rdf:type owl:NamedIndividual ,
                      :Barrio ;
             :seIncluyeEn :Machala ;
             rdfs:label "Santa Elena"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Sierra
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Sierra
 :Sierra rdf:type owl:NamedIndividual ,
                  :Region ;
         :seIncluyeEn :Ecuador ;
         rdfs:label "Sierra"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#agente1
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#agente1
 :agente1 rdf:type owl:NamedIndividual ,
                   :Agentes ;
          rdfs:label "Agente Raul Cabrera" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#agente_juan_perez
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#agente_juan_perez
 :agente_juan_perez rdf:type owl:NamedIndividual ,
                             :Agentes ;
                    rdfs:label "Agente Raul perez" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#costaUri
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#costaUri
 :costaUri rdf:type owl:NamedIndividual ,
                    :Region ;
           :seIncluyeEn :Ecuador ;
           rdfs:label "Costa"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#direccion3
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#direccion3
 :direccion3 rdf:type owl:NamedIndividual ,
                      :Ubicacion ;
             rdfs:label "Ecuador y 4to E"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#direccion4
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#direccion4
 :direccion4 rdf:type owl:NamedIndividual ,
                      :Ubicacion ;
             rdfs:label "Avenidad 8 Noviembre"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#direccion5
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#direccion5
 :direccion5 rdf:type owl:NamedIndividual ,
                      :Ubicacion ;
             :seIncluyeEn :Machala ;
             rdfs:label "Via Balosa" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#direccion6
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#direccion6
 :direccion6 rdf:type owl:NamedIndividual ,
                      :Ubicacion ;
             :seIncluyeEn :Machala ;
             rdfs:label "Via Pajonal, terreno 10" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Agente_Raul_Correa
+:Agente_Raul_Correa rdf:type owl:NamedIndividual ;
+                    rdfs:label "Raul Correa"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Agente_Raul_Perez
+:Agente_Raul_Perez rdf:type owl:NamedIndividual ;
+                   rdfs:label "Raul Perez"@es .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
