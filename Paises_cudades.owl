@@ -1,0 +1,156 @@
+@prefix : <http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37> .
+
+<http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#seIncluyeEn
+:seIncluyeEn rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty ;
+             rdfs:domain :Lugar ;
+             rdfs:range :Lugar .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Barrio
+:Barrio rdf:type owl:Class ;
+        rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Ciudad
+:Ciudad rdf:type owl:Class ;
+        rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lugar
+:Lugar rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Pais
+:Pais rdf:type owl:Class ;
+      rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Provincia
+:Provincia rdf:type owl:Class ;
+           rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf :Lugar .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Azuay
+:Azuay rdf:type owl:NamedIndividual ,
+                :Provincia ;
+       :seIncluyeEn :Sierra ;
+       rdfs:label "Azuay"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Cuenca
+:Cuenca rdf:type owl:NamedIndividual ,
+                 :Ciudad ;
+        :seIncluyeEn :Azuay ;
+        rdfs:label "Cuenca"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Duran
+:Duran rdf:type owl:NamedIndividual ,
+                :Ciudad ;
+       :seIncluyeEn :Guayas ;
+       rdfs:label "Duran"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Ecuador
+:Ecuador rdf:type owl:NamedIndividual ,
+                  :Pais ;
+         rdfs:label "Ecuador"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#ElGuabo
+:ElGuabo rdf:type owl:NamedIndividual ,
+                  :Ciudad ;
+         :seIncluyeEn :ElOro ;
+         rdfs:label "El Guabo"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#ElOro
+:ElOro rdf:type owl:NamedIndividual ,
+                :Provincia ;
+       :seIncluyeEn :costaUri ;
+       rdfs:label "El Oro"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Guayaquil
+:Guayaquil rdf:type owl:NamedIndividual ,
+                    :Ciudad ;
+           :seIncluyeEn :Guayas ;
+           rdfs:label "Guayaquil"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Guayas
+:Guayas rdf:type owl:NamedIndividual ,
+                 :Provincia ;
+        :seIncluyeEn :costaUri ;
+        rdfs:label "Guayas"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Machala
+:Machala rdf:type owl:NamedIndividual ,
+                  :Ciudad ;
+         :seIncluyeEn :ElOro ;
+         rdfs:label "Machala"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Pasaje
+:Pasaje rdf:type owl:NamedIndividual ,
+                 :Ciudad ;
+        :seIncluyeEn :ElOro ;
+        rdfs:label "Pasaje"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#SanJacinto
+:SanJacinto rdf:type owl:NamedIndividual ,
+                     :Barrio ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "San Jacinto"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#SantaElena
+:SantaElena rdf:type owl:NamedIndividual ,
+                     :Barrio ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "Santa Elena"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Sierra
+:Sierra rdf:type owl:NamedIndividual ,
+                 :Region ;
+        :seIncluyeEn :Ecuador ;
+        rdfs:label "Sierra"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#costaUri
+:costaUri rdf:type owl:NamedIndividual ,
+                   :Region ;
+          :seIncluyeEn :Ecuador ;
+          rdfs:label "Costa"@es .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
