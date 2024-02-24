@@ -20,6 +20,70 @@
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#cantidad_habitaciones
+:cantidad_habitaciones rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#descripcion
+:descripcion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#direccion
+:direccion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#fecha_fin_publicacion
+:fecha_fin_publicacion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#fecha_publicacion
+:fecha_publicacion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#latitud
+:latitud rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#longitud
+:longitud rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#medida_ancho
+:medida_ancho rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#medida_largo
+:medida_largo rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#moneda
+:moneda rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#precio
+:precio rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#superficie_cubierta
+:superficie_cubierta rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#superficie_lote
+:superficie_lote rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#tipo_amenities
+:tipo_amenities rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#titulo
+:titulo rdf:type owl:DatatypeProperty .
+
+
+#################################################################
 #    Classes
 #################################################################
 
