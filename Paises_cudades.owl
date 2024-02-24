@@ -4,19 +4,19 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios> .
+@base <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliaria> .
 
-<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios> rdf:type owl:Ontology .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliaria> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn
-:seIncluyeEn rdf:type owl:ObjectProperty ,
-                      owl:TransitiveProperty ;
-             rdfs:domain :Lugar ;
-             rdfs:range :Lugar .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> rdf:type owl:ObjectProperty ,
+                                                                                        owl:TransitiveProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lugar> ;
+                                                                               rdfs:range <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lugar> .
 
 
 #################################################################
@@ -24,63 +24,63 @@
 #################################################################
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#cantidad_habitaciones
-:cantidad_habitaciones rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#cantidad_habitaciones> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#descripcion
-:descripcion rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#descripcion> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion
-:direccion rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#fecha_fin_publicacion
-:fecha_fin_publicacion rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#fecha_fin_publicacion> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#fecha_publicacion
-:fecha_publicacion rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#fecha_publicacion> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#latitud
-:latitud rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#latitud> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#longitud
-:longitud rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#longitud> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_ancho
-:medida_ancho rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_ancho> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_largo
-:medida_largo rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_largo> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#moneda
-:moneda rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#moneda> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#precio
-:precio rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#precio> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_cubierta
-:superficie_cubierta rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_cubierta> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_lote
-:superficie_lote rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_lote> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#tipo_amenities
-:tipo_amenities rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#tipo_amenities> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#titulo
-:titulo rdf:type owl:DatatypeProperty .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#titulo> rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -88,63 +88,63 @@
 #################################################################
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Agentes
-:Agentes rdf:type owl:Class .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Agentes> rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Amenities
-:Amenities rdf:type owl:Class .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Amenities> rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Barrio
-:Barrio rdf:type owl:Class ;
-        rdfs:subClassOf :Lugar .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Barrio> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lugar> .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casas
-:Casas rdf:type owl:Class ;
-       rdfs:subClassOf :Inmuebles .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casas> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Inmuebles> .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ciudad
-:Ciudad rdf:type owl:Class ;
-        rdfs:subClassOf :Lugar .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ciudad> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lugar> .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Inmuebles
-:Inmuebles rdf:type owl:Class .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Inmuebles> rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lotes
-:Lotes rdf:type owl:Class ;
-       rdfs:subClassOf :Inmuebles .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lotes> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Inmuebles> .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lugar
-:Lugar rdf:type owl:Class .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lugar> rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Pais
-:Pais rdf:type owl:Class ;
-      rdfs:subClassOf :Lugar .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Pais> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lugar> .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Provincia
-:Provincia rdf:type owl:Class ;
-           rdfs:subClassOf :Lugar .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Provincia> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lugar> .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Region
-:Region rdf:type owl:Class ;
-        rdfs:subClassOf :Lugar .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Region> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lugar> .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Servicios
-:Servicios rdf:type owl:Class .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Servicios> rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ubicacion
-:Ubicacion rdf:type owl:Class ;
-           rdfs:subClassOf :Lugar .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ubicacion> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lugar> .
 
 
 #################################################################
@@ -152,270 +152,270 @@
 #################################################################
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Aire_Acondicionado
-:Aire_Acondicionado rdf:type owl:NamedIndividual ,
-                             :Amenities ;
-                    rdfs:label "Aire Acondicionado"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Aire_Acondicionado> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Amenities> ;
+                                                                                      rdfs:label "Aire Acondicionado"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Alcantarillado
-:Alcantarillado rdf:type owl:NamedIndividual ,
-                         :Servicios ;
-                rdfs:label "Alcantarillado" .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Alcantarillado> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Servicios> ;
+                                                                                  rdfs:label "Alcantarillado" .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Azuay
-:Azuay rdf:type owl:NamedIndividual ,
-                :Provincia ;
-       :seIncluyeEn :Sierra ;
-       rdfs:label "Azuay"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Azuay> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Provincia> ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Sierra> ;
+                                                                         rdfs:label "Azuay"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Calefaccion
-:Calefaccion rdf:type owl:NamedIndividual ,
-                      :Amenities ;
-             rdfs:label "Calefaccion"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Calefaccion> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Amenities> ;
+                                                                               rdfs:label "Calefaccion"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casa1
-:Casa1 rdf:type owl:NamedIndividual ,
-                :Casas ;
-       :seIncluyeEn :Direccion2 ;
-       :cantidad_habitaciones 3 ;
-       :medida_ancho "12.0"^^xsd:double ;
-       :medida_largo "20.0"^^xsd:double ;
-       :moneda "Dolar" ;
-       :precio "250000.0"^^xsd:double ;
-       :superficie_cubierta "180.0"^^xsd:double ;
-       :superficie_lote "240.0"^^xsd:double ;
-       rdfs:label "Casa Berru"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casa1> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casas> ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Direccion2> ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#cantidad_habitaciones> 3 ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_ancho> "12.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_largo> "20.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#moneda> "Dolar" ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#precio> "250000.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_cubierta> "180.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_lote> "240.0"^^xsd:double ;
+                                                                         rdfs:label "Casa Berru"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casa2
-:Casa2 rdf:type owl:NamedIndividual ,
-                :Casas ;
-       :seIncluyeEn :direccion3 ;
-       :cantidad_habitaciones "4.0"^^xsd:double ;
-       :medida_ancho "10.0"^^xsd:double ;
-       :medida_largo "20.0"^^xsd:double ;
-       :moneda "Dolar" ;
-       :precio "220000.0"^^xsd:double ;
-       :superficie_cubierta "150.0"^^xsd:double ;
-       :superficie_lote "200.0"^^xsd:double ;
-       rdfs:label "Casa Farias"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casa2> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casas> ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion3> ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#cantidad_habitaciones> "4.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_ancho> "10.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_largo> "20.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#moneda> "Dolar" ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#precio> "220000.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_cubierta> "150.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_lote> "200.0"^^xsd:double ;
+                                                                         rdfs:label "Casa Farias"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casa_Aguirre
-:Casa_Aguirre rdf:type owl:NamedIndividual ,
-                       :Casas ;
-              :seIncluyeEn :direccion4 ;
-              :cantidad_habitaciones 2 ;
-              :medida_ancho "10.0"^^xsd:double ;
-              :medida_largo "20.0"^^xsd:double ;
-              :moneda "Dolar"^^xsd:string ;
-              :precio "60000.0"^^xsd:double ;
-              :superficie_cubierta "150.0"^^xsd:double ;
-              :superficie_lote "200.0"^^xsd:double ;
-              rdfs:label "Casa Aguirre"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casa_Aguirre> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casas> ;
+                                                                                <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion4> ;
+                                                                                <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#cantidad_habitaciones> 2 ;
+                                                                                <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_ancho> "10.0"^^xsd:double ;
+                                                                                <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_largo> "20.0"^^xsd:double ;
+                                                                                <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#moneda> "Dolar"^^xsd:string ;
+                                                                                <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#precio> "60000.0"^^xsd:double ;
+                                                                                <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_cubierta> "150.0"^^xsd:double ;
+                                                                                <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_lote> "200.0"^^xsd:double ;
+                                                                                rdfs:label "Casa Aguirre"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casa_Mosquera
-:Casa_Mosquera rdf:type owl:NamedIndividual ,
-                        :Casas ;
-               :seIncluyeEn :Direccion1 ;
-               :cantidad_habitaciones 3 ;
-               :medida_ancho "20.0"^^xsd:double ;
-               :medida_largo "20.0"^^xsd:double ;
-               :moneda "Dolar" ;
-               :precio "200000.0"^^xsd:double ;
-               :superficie_cubierta "250.0"^^xsd:double ;
-               :superficie_lote "400.0"^^xsd:double ;
-               rdfs:label "Casa Mosquera" .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casa_Mosquera> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Casas> ;
+                                                                                 <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Direccion1> ;
+                                                                                 <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#cantidad_habitaciones> 3 ;
+                                                                                 <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_ancho> "20.0"^^xsd:double ;
+                                                                                 <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_largo> "20.0"^^xsd:double ;
+                                                                                 <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#moneda> "Dolar" ;
+                                                                                 <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#precio> "200000.0"^^xsd:double ;
+                                                                                 <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_cubierta> "250.0"^^xsd:double ;
+                                                                                 <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_lote> "400.0"^^xsd:double ;
+                                                                                 rdfs:label "Casa Mosquera" .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Cuenca
-:Cuenca rdf:type owl:NamedIndividual ,
-                 :Ciudad ;
-        :seIncluyeEn :Azuay ;
-        rdfs:label "Cuenca"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Cuenca> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ciudad> ;
+                                                                          <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Azuay> ;
+                                                                          rdfs:label "Cuenca"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Direccion1
-:Direccion1 rdf:type owl:NamedIndividual ,
-                     :Ubicacion ;
-            :seIncluyeEn :Machala ;
-            rdfs:label "9na Sur y Palmeras"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Direccion1> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ubicacion> ;
+                                                                              <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Machala> ;
+                                                                              rdfs:label "9na Sur y Palmeras"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Direccion2
-:Direccion2 rdf:type owl:NamedIndividual ,
-                     :Ubicacion ;
-            :seIncluyeEn :Machala ;
-            rdfs:label "10 de Agosto y 9na Norte"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Direccion2> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ubicacion> ;
+                                                                              <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Machala> ;
+                                                                              rdfs:label "10 de Agosto y 9na Norte"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Duran
-:Duran rdf:type owl:NamedIndividual ,
-                :Ciudad ;
-       :seIncluyeEn :Guayas ;
-       rdfs:label "Duran"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Duran> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ciudad> ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Guayas> ;
+                                                                         rdfs:label "Duran"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ecuador
-:Ecuador rdf:type owl:NamedIndividual ,
-                  :Pais ;
-         rdfs:label "Ecuador"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ecuador> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Pais> ;
+                                                                           rdfs:label "Ecuador"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#ElGuabo
-:ElGuabo rdf:type owl:NamedIndividual ,
-                  :Ciudad ;
-         :seIncluyeEn :ElOro ;
-         rdfs:label "El Guabo"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#ElGuabo> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ciudad> ;
+                                                                           <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#ElOro> ;
+                                                                           rdfs:label "El Guabo"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#ElOro
-:ElOro rdf:type owl:NamedIndividual ,
-                :Provincia ;
-       :seIncluyeEn :costaUri ;
-       rdfs:label "El Oro"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#ElOro> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Provincia> ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#costaUri> ;
+                                                                         rdfs:label "El Oro"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Energia_Electrica
-:Energia_Electrica rdf:type owl:NamedIndividual ,
-                            :Servicios ;
-                   rdfs:label "Energia Electrica" .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Energia_Electrica> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Servicios> ;
+                                                                                     rdfs:label "Energia Electrica" .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Gas
-:Gas rdf:type owl:NamedIndividual ,
-              :Servicios ;
-     rdfs:label "Gas" .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Gas> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Servicios> ;
+                                                                       rdfs:label "Gas" .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Guayaquil
-:Guayaquil rdf:type owl:NamedIndividual ,
-                    :Ciudad ;
-           :seIncluyeEn :Guayas ;
-           rdfs:label "Guayaquil"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Guayaquil> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ciudad> ;
+                                                                             <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Guayas> ;
+                                                                             rdfs:label "Guayaquil"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Guayas
-:Guayas rdf:type owl:NamedIndividual ,
-                 :Provincia ;
-        :seIncluyeEn :costaUri ;
-        rdfs:label "Guayas"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Guayas> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Provincia> ;
+                                                                          <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#costaUri> ;
+                                                                          rdfs:label "Guayas"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Internet
-:Internet rdf:type owl:NamedIndividual ,
-                   :Amenities ;
-          rdfs:label "Internet"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Internet> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Amenities> ;
+                                                                            rdfs:label "Internet"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lote1
-:Lote1 rdf:type owl:NamedIndividual ,
-                :Lotes ;
-       :seIncluyeEn :direccion6 ;
-       :medida_ancho "8.0"^^xsd:double ;
-       :medida_largo "10.0"^^xsd:double ;
-       :moneda "Dolar" ;
-       :precio "20000.0"^^xsd:double ;
-       :superficie_lote "80.0"^^xsd:double ;
-       rdfs:label "Lote Mosquera"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lote1> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lotes> ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion6> ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_ancho> "8.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_largo> "10.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#moneda> "Dolar" ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#precio> "20000.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_lote> "80.0"^^xsd:double ;
+                                                                         rdfs:label "Lote Mosquera"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lote2
-:Lote2 rdf:type owl:NamedIndividual ,
-                :Lotes ;
-       :seIncluyeEn :direccion5 ;
-       :medida_ancho "10.0"^^xsd:double ;
-       :medida_largo "15.0"^^xsd:double ;
-       :moneda "Dolar" ;
-       :precio "35000.0"^^xsd:double ;
-       :superficie_lote "150.0"^^xsd:double ;
-       rdfs:label "Lote Figueroa"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lote2> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Lotes> ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion5> ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_ancho> "10.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#medida_largo> "15.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#moneda> "Dolar" ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#precio> "35000.0"^^xsd:double ;
+                                                                         <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#superficie_lote> "150.0"^^xsd:double ;
+                                                                         rdfs:label "Lote Figueroa"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Machala
-:Machala rdf:type owl:NamedIndividual ,
-                  :Ciudad ;
-         :seIncluyeEn :ElOro ;
-         rdfs:label "Machala"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Machala> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ciudad> ;
+                                                                           <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#ElOro> ;
+                                                                           rdfs:label "Machala"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Pasaje
-:Pasaje rdf:type owl:NamedIndividual ,
-                 :Ciudad ;
-        :seIncluyeEn :ElOro ;
-        rdfs:label "Pasaje"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Pasaje> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ciudad> ;
+                                                                          <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#ElOro> ;
+                                                                          rdfs:label "Pasaje"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#SanJacinto
-:SanJacinto rdf:type owl:NamedIndividual ,
-                     :Barrio ;
-            :seIncluyeEn :Machala ;
-            rdfs:label "San Jacinto"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#SanJacinto> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Barrio> ;
+                                                                              <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Machala> ;
+                                                                              rdfs:label "San Jacinto"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#SantaElena
-:SantaElena rdf:type owl:NamedIndividual ,
-                     :Barrio ;
-            :seIncluyeEn :Machala ;
-            rdfs:label "Santa Elena"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#SantaElena> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Barrio> ;
+                                                                              <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Machala> ;
+                                                                              rdfs:label "Santa Elena"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Sierra
-:Sierra rdf:type owl:NamedIndividual ,
-                 :Region ;
-        :seIncluyeEn :Ecuador ;
-        rdfs:label "Sierra"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Sierra> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Region> ;
+                                                                          <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ecuador> ;
+                                                                          rdfs:label "Sierra"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#agente1
-:agente1 rdf:type owl:NamedIndividual ,
-                  :Agentes ;
-         rdfs:label "Agente Raul Cabrera" .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#agente1> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Agentes> ;
+                                                                           rdfs:label "Agente Raul Cabrera" .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#agente_juan_perez
-:agente_juan_perez rdf:type owl:NamedIndividual ,
-                            :Agentes ;
-                   rdfs:label "Agente Raul perez" .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#agente_juan_perez> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Agentes> ;
+                                                                                     rdfs:label "Agente Raul perez" .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#costaUri
-:costaUri rdf:type owl:NamedIndividual ,
-                   :Region ;
-          :seIncluyeEn :Ecuador ;
-          rdfs:label "Costa"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#costaUri> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Region> ;
+                                                                            <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ecuador> ;
+                                                                            rdfs:label "Costa"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion3
-:direccion3 rdf:type owl:NamedIndividual ,
-                     :Ubicacion ;
-            :seIncluyeEn :Machala ;
-            rdfs:label "Ecuador y 4to E"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion3> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ubicacion> ;
+                                                                              <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Machala> ;
+                                                                              rdfs:label "Ecuador y 4to E"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion4
-:direccion4 rdf:type owl:NamedIndividual ,
-                     :Ubicacion ;
-            :seIncluyeEn :Cuenca ;
-            rdfs:label "Avenidad 8 Noviembre"@es .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion4> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ubicacion> ;
+                                                                              <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Cuenca> ;
+                                                                              rdfs:label "Avenidad 8 Noviembre"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion5
-:direccion5 rdf:type owl:NamedIndividual ,
-                     :Ubicacion ;
-            :seIncluyeEn :Machala ;
-            rdfs:label "Via Balosa" .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion5> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ubicacion> ;
+                                                                              <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Machala> ;
+                                                                              rdfs:label "Via Balosa" .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion6
-:direccion6 rdf:type owl:NamedIndividual ,
-                     :Ubicacion ;
-            :seIncluyeEn :Machala ;
-            rdfs:label "Via Pajonal, terreno 10" .
+<http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#direccion6> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Ubicacion> ;
+                                                                              <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#seIncluyeEn> <http://www.semanticweb.org/jorge/ontologies/2024/1/inmobiliarios#Machala> ;
+                                                                              rdfs:label "Via Pajonal, terreno 10" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
