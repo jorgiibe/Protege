@@ -28,9 +28,23 @@
         rdfs:subClassOf :Lugar .
 
 
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casas
+:Casas rdf:type owl:Class ;
+       rdfs:subClassOf :Inmuebles .
+
+
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Ciudad
 :Ciudad rdf:type owl:Class ;
         rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Inmuebles
+:Inmuebles rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lotes
+:Lotes rdf:type owl:Class ;
+       rdfs:subClassOf :Inmuebles .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lugar
@@ -61,6 +75,18 @@
                 :Provincia ;
        :seIncluyeEn :Sierra ;
        rdfs:label "Azuay"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa1
+:Casa1 rdf:type owl:NamedIndividual ,
+                :Casas ;
+       rdfs:label "Casa Berru"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa2
+:Casa2 rdf:type owl:NamedIndividual ,
+                :Casas ;
+       rdfs:label "Casa Farias"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Cuenca
@@ -109,6 +135,18 @@
                  :Provincia ;
         :seIncluyeEn :costaUri ;
         rdfs:label "Guayas"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lote1
+:Lote1 rdf:type owl:NamedIndividual ,
+                :Lotes ;
+       rdfs:label "Lote Mosquera"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lote2
+:Lote2 rdf:type owl:NamedIndividual ,
+                :Lotes ;
+       rdfs:label "Lote Figueroa"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Machala
