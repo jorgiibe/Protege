@@ -43,6 +43,12 @@
                  rdfs:range :Amenities .
 
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#pertenece_inmobiliaria
+:pertenece_inmobiliaria rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Inmobiliaria ;
+                        rdfs:range :Agentes .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -467,6 +473,7 @@
 :agente1 rdf:type owl:NamedIndividual ,
                   :Agentes ;
          :responsable :Casa1 ;
+         :pertenece_inmobiliaria :Inmobiliaria1 ;
          rdfs:label "Agente Raul Cabrera" .
 
 
@@ -474,6 +481,7 @@
 :agente_juan_perez rdf:type owl:NamedIndividual ,
                             :Agentes ;
                    :responsable :Lote2 ;
+                   :pertenece_inmobiliaria :Inmobiliaria2 ;
                    rdfs:label "Agente Raul perez" .
 
 
