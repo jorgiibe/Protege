@@ -19,7 +19,8 @@
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#oferta
-:oferta rdf:type owl:ObjectProperty ;
+:oferta rdf:type owl:ObjectProperty ,
+                 owl:AsymmetricProperty ;
         rdfs:domain :Avisos ;
         rdfs:range :Inmuebles .
 
@@ -50,7 +51,8 @@
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#tiene_inmuebles
-:tiene_inmuebles rdf:type owl:ObjectProperty ;
+:tiene_inmuebles rdf:type owl:ObjectProperty ,
+                          owl:IrreflexiveProperty ;
                  rdfs:domain :Inmobiliaria ;
                  rdfs:range :Inmuebles .
 
