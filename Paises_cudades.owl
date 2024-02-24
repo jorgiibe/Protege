@@ -209,7 +209,15 @@
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa_Mosquera
 :Casa_Mosquera rdf:type owl:NamedIndividual ,
                         :Casas ;
-               :seIncluyeEn :Direccion1 .
+               :seIncluyeEn :Direccion1 ;
+               :cantidad_habitaciones 3 ;
+               :medida_ancho "20.0"^^xsd:double ;
+               :medida_largo "20.0"^^xsd:double ;
+               :moneda "Dolar" ;
+               :precio "20000.0"^^xsd:double ;
+               :superficie_cubierta "250.0"^^xsd:double ;
+               :superficie_lote "400.0"^^xsd:double ;
+               rdfs:label "Casa Mosquera" .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Cuenca
