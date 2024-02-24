@@ -23,6 +23,10 @@
 #    Classes
 #################################################################
 
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Amenities
+:Amenities rdf:type owl:Class .
+
+
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Barrio
 :Barrio rdf:type owl:Class ;
         rdfs:subClassOf :Lugar .
@@ -75,11 +79,21 @@
 #    Individuals
 #################################################################
 
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Aire_Acondicionado
+:Aire_Acondicionado rdf:type owl:NamedIndividual ;
+                    rdfs:label "Aire Acondicionado"@es .
+
+
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Azuay
 :Azuay rdf:type owl:NamedIndividual ,
                 :Provincia ;
        :seIncluyeEn :Sierra ;
        rdfs:label "Azuay"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Calefaccion
+:Calefaccion rdf:type owl:NamedIndividual ;
+             rdfs:label "Calefaccion"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa1
@@ -161,6 +175,11 @@
                  :Provincia ;
         :seIncluyeEn :costaUri ;
         rdfs:label "Guayas"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Internet
+:Internet rdf:type owl:NamedIndividual ;
+          rdfs:label "Internet"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lote1
