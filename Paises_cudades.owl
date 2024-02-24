@@ -4,416 +4,416 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.utmachala.edu.ec/grupo1/> .
+@base <http://www.utmachala.edu.ec/grupo1/inmobiliarias> .
 
-<http://www.utmachala.edu.ec/grupo1/> rdf:type owl:Ontology .
+<http://www.utmachala.edu.ec/grupo1/inmobiliarias> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/#seIncluyeEn
-<http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> rdf:type owl:ObjectProperty ,
-                                                           owl:TransitiveProperty ;
-                                                  rdfs:domain <http://www.utmachala.edu.ec/grupo1/#Lugar> ;
-                                                  rdfs:range <http://www.utmachala.edu.ec/grupo1/#Lugar> .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#seIncluyeEn
+:seIncluyeEn rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty ;
+             rdfs:domain :Lugar ;
+             rdfs:range :Lugar .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/#cantidad_habitaciones
-<http://www.utmachala.edu.ec/grupo1/#cantidad_habitaciones> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#cantidad_habitaciones
+:cantidad_habitaciones rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#descripcion
-<http://www.utmachala.edu.ec/grupo1/#descripcion> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#descripcion
+:descripcion rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#direccion
-<http://www.utmachala.edu.ec/grupo1/#direccion> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#direccion
+:direccion rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#fecha_fin_publicacion
-<http://www.utmachala.edu.ec/grupo1/#fecha_fin_publicacion> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#fecha_fin_publicacion
+:fecha_fin_publicacion rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#fecha_publicacion
-<http://www.utmachala.edu.ec/grupo1/#fecha_publicacion> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#fecha_publicacion
+:fecha_publicacion rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#latitud
-<http://www.utmachala.edu.ec/grupo1/#latitud> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#latitud
+:latitud rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#longitud
-<http://www.utmachala.edu.ec/grupo1/#longitud> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#longitud
+:longitud rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#medida_ancho
-<http://www.utmachala.edu.ec/grupo1/#medida_ancho> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#medida_ancho
+:medida_ancho rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#medida_largo
-<http://www.utmachala.edu.ec/grupo1/#medida_largo> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#medida_largo
+:medida_largo rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#moneda
-<http://www.utmachala.edu.ec/grupo1/#moneda> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#moneda
+:moneda rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#precio
-<http://www.utmachala.edu.ec/grupo1/#precio> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#precio
+:precio rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#superficie_cubierta
-<http://www.utmachala.edu.ec/grupo1/#superficie_cubierta> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#superficie_cubierta
+:superficie_cubierta rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#superficie_lote
-<http://www.utmachala.edu.ec/grupo1/#superficie_lote> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#superficie_lote
+:superficie_lote rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#tipo_amenities
-<http://www.utmachala.edu.ec/grupo1/#tipo_amenities> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#tipo_amenities
+:tipo_amenities rdf:type owl:DatatypeProperty .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#titulo
-<http://www.utmachala.edu.ec/grupo1/#titulo> rdf:type owl:DatatypeProperty .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#titulo
+:titulo rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/#Agentes
-<http://www.utmachala.edu.ec/grupo1/#Agentes> rdf:type owl:Class .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Agentes
+:Agentes rdf:type owl:Class .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Amenities
-<http://www.utmachala.edu.ec/grupo1/#Amenities> rdf:type owl:Class .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Amenities
+:Amenities rdf:type owl:Class .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Barrio
-<http://www.utmachala.edu.ec/grupo1/#Barrio> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://www.utmachala.edu.ec/grupo1/#Lugar> .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Barrio
+:Barrio rdf:type owl:Class ;
+        rdfs:subClassOf :Lugar .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Casas
-<http://www.utmachala.edu.ec/grupo1/#Casas> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://www.utmachala.edu.ec/grupo1/#Inmuebles> .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Casas
+:Casas rdf:type owl:Class ;
+       rdfs:subClassOf :Inmuebles .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Ciudad
-<http://www.utmachala.edu.ec/grupo1/#Ciudad> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://www.utmachala.edu.ec/grupo1/#Lugar> .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Ciudad
+:Ciudad rdf:type owl:Class ;
+        rdfs:subClassOf :Lugar .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Inmuebles
-<http://www.utmachala.edu.ec/grupo1/#Inmuebles> rdf:type owl:Class .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Inmuebles
+:Inmuebles rdf:type owl:Class .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Lotes
-<http://www.utmachala.edu.ec/grupo1/#Lotes> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://www.utmachala.edu.ec/grupo1/#Inmuebles> .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Lotes
+:Lotes rdf:type owl:Class ;
+       rdfs:subClassOf :Inmuebles .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Lugar
-<http://www.utmachala.edu.ec/grupo1/#Lugar> rdf:type owl:Class .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Lugar
+:Lugar rdf:type owl:Class .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Pais
-<http://www.utmachala.edu.ec/grupo1/#Pais> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://www.utmachala.edu.ec/grupo1/#Lugar> .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Pais
+:Pais rdf:type owl:Class ;
+      rdfs:subClassOf :Lugar .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Provincia
-<http://www.utmachala.edu.ec/grupo1/#Provincia> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.utmachala.edu.ec/grupo1/#Lugar> .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Provincia
+:Provincia rdf:type owl:Class ;
+           rdfs:subClassOf :Lugar .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Region
-<http://www.utmachala.edu.ec/grupo1/#Region> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://www.utmachala.edu.ec/grupo1/#Lugar> .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf :Lugar .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Servicios
-<http://www.utmachala.edu.ec/grupo1/#Servicios> rdf:type owl:Class .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Servicios
+:Servicios rdf:type owl:Class .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Ubicacion
-<http://www.utmachala.edu.ec/grupo1/#Ubicacion> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.utmachala.edu.ec/grupo1/#Lugar> .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Ubicacion
+:Ubicacion rdf:type owl:Class ;
+           rdfs:subClassOf :Lugar .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.utmachala.edu.ec/grupo1/#Aire_Acondicionado
-<http://www.utmachala.edu.ec/grupo1/#Aire_Acondicionado> rdf:type owl:NamedIndividual ,
-                                                                  <http://www.utmachala.edu.ec/grupo1/#Amenities> ;
-                                                         rdfs:label "Aire Acondicionado"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/#Alcantarillado
-<http://www.utmachala.edu.ec/grupo1/#Alcantarillado> rdf:type owl:NamedIndividual ,
-                                                              <http://www.utmachala.edu.ec/grupo1/#Servicios> ;
-                                                     rdfs:label "Alcantarillado" .
-
-
-###  http://www.utmachala.edu.ec/grupo1/#Azuay
-<http://www.utmachala.edu.ec/grupo1/#Azuay> rdf:type owl:NamedIndividual ,
-                                                     <http://www.utmachala.edu.ec/grupo1/#Provincia> ;
-                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Sierra> ;
-                                            rdfs:label "Azuay"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/#Calefaccion
-<http://www.utmachala.edu.ec/grupo1/#Calefaccion> rdf:type owl:NamedIndividual ,
-                                                           <http://www.utmachala.edu.ec/grupo1/#Amenities> ;
-                                                  rdfs:label "Calefaccion"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/#Casa1
-<http://www.utmachala.edu.ec/grupo1/#Casa1> rdf:type owl:NamedIndividual ,
-                                                     <http://www.utmachala.edu.ec/grupo1/#Casas> ;
-                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Direccion2> ;
-                                            <http://www.utmachala.edu.ec/grupo1/#cantidad_habitaciones> 3 ;
-                                            <http://www.utmachala.edu.ec/grupo1/#medida_ancho> "12.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#medida_largo> "20.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#moneda> "Dolar" ;
-                                            <http://www.utmachala.edu.ec/grupo1/#precio> "250000.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#superficie_cubierta> "180.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#superficie_lote> "240.0"^^xsd:double ;
-                                            rdfs:label "Casa Berru"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/#Casa2
-<http://www.utmachala.edu.ec/grupo1/#Casa2> rdf:type owl:NamedIndividual ,
-                                                     <http://www.utmachala.edu.ec/grupo1/#Casas> ;
-                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#direccion3> ;
-                                            <http://www.utmachala.edu.ec/grupo1/#cantidad_habitaciones> "4.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#medida_ancho> "10.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#medida_largo> "20.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#moneda> "Dolar" ;
-                                            <http://www.utmachala.edu.ec/grupo1/#precio> "220000.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#superficie_cubierta> "150.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#superficie_lote> "200.0"^^xsd:double ;
-                                            rdfs:label "Casa Farias"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/#Casa_Aguirre
-<http://www.utmachala.edu.ec/grupo1/#Casa_Aguirre> rdf:type owl:NamedIndividual ,
-                                                            <http://www.utmachala.edu.ec/grupo1/#Casas> ;
-                                                   <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#direccion4> ;
-                                                   <http://www.utmachala.edu.ec/grupo1/#cantidad_habitaciones> 2 ;
-                                                   <http://www.utmachala.edu.ec/grupo1/#medida_ancho> "10.0"^^xsd:double ;
-                                                   <http://www.utmachala.edu.ec/grupo1/#medida_largo> "20.0"^^xsd:double ;
-                                                   <http://www.utmachala.edu.ec/grupo1/#moneda> "Dolar"^^xsd:string ;
-                                                   <http://www.utmachala.edu.ec/grupo1/#precio> "60000.0"^^xsd:double ;
-                                                   <http://www.utmachala.edu.ec/grupo1/#superficie_cubierta> "150.0"^^xsd:double ;
-                                                   <http://www.utmachala.edu.ec/grupo1/#superficie_lote> "200.0"^^xsd:double ;
-                                                   rdfs:label "Casa Aguirre"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/#Casa_Mosquera
-<http://www.utmachala.edu.ec/grupo1/#Casa_Mosquera> rdf:type owl:NamedIndividual ,
-                                                             <http://www.utmachala.edu.ec/grupo1/#Casas> ;
-                                                    <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Direccion1> ;
-                                                    <http://www.utmachala.edu.ec/grupo1/#cantidad_habitaciones> 3 ;
-                                                    <http://www.utmachala.edu.ec/grupo1/#medida_ancho> "20.0"^^xsd:double ;
-                                                    <http://www.utmachala.edu.ec/grupo1/#medida_largo> "20.0"^^xsd:double ;
-                                                    <http://www.utmachala.edu.ec/grupo1/#moneda> "Dolar" ;
-                                                    <http://www.utmachala.edu.ec/grupo1/#precio> "200000.0"^^xsd:double ;
-                                                    <http://www.utmachala.edu.ec/grupo1/#superficie_cubierta> "250.0"^^xsd:double ;
-                                                    <http://www.utmachala.edu.ec/grupo1/#superficie_lote> "400.0"^^xsd:double ;
-                                                    rdfs:label "Casa Mosquera" .
-
-
-###  http://www.utmachala.edu.ec/grupo1/#Cuenca
-<http://www.utmachala.edu.ec/grupo1/#Cuenca> rdf:type owl:NamedIndividual ,
-                                                      <http://www.utmachala.edu.ec/grupo1/#Ciudad> ;
-                                             <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Azuay> ;
-                                             rdfs:label "Cuenca"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/#Direccion1
-<http://www.utmachala.edu.ec/grupo1/#Direccion1> rdf:type owl:NamedIndividual ,
-                                                          <http://www.utmachala.edu.ec/grupo1/#Ubicacion> ;
-                                                 <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#SanJacinto> ;
-                                                 rdfs:label "9na Sur y Palmeras"@es .
-
-
-###  http://www.utmachala.edu.ec/grupo1/#Direccion2
-<http://www.utmachala.edu.ec/grupo1/#Direccion2> rdf:type owl:NamedIndividual ,
-                                                          <http://www.utmachala.edu.ec/grupo1/#Ubicacion> ;
-                                                 <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#SantaElena> ;
-                                                 rdfs:label "10 de Agosto y 9na Norte"@es .
-
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Aire_Acondicionado
+:Aire_Acondicionado rdf:type owl:NamedIndividual ,
+                             :Amenities ;
+                    rdfs:label "Aire Acondicionado"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Alcantarillado
+:Alcantarillado rdf:type owl:NamedIndividual ,
+                         :Servicios ;
+                rdfs:label "Alcantarillado" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Azuay
+:Azuay rdf:type owl:NamedIndividual ,
+                :Provincia ;
+       :seIncluyeEn :Sierra ;
+       rdfs:label "Azuay"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Calefaccion
+:Calefaccion rdf:type owl:NamedIndividual ,
+                      :Amenities ;
+             rdfs:label "Calefaccion"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Casa1
+:Casa1 rdf:type owl:NamedIndividual ,
+                :Casas ;
+       :seIncluyeEn :Direccion2 ;
+       :cantidad_habitaciones 3 ;
+       :medida_ancho "12.0"^^xsd:double ;
+       :medida_largo "20.0"^^xsd:double ;
+       :moneda "Dolar" ;
+       :precio "250000.0"^^xsd:double ;
+       :superficie_cubierta "180.0"^^xsd:double ;
+       :superficie_lote "240.0"^^xsd:double ;
+       rdfs:label "Casa Berru"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Casa2
+:Casa2 rdf:type owl:NamedIndividual ,
+                :Casas ;
+       :seIncluyeEn :direccion3 ;
+       :cantidad_habitaciones "4.0"^^xsd:double ;
+       :medida_ancho "10.0"^^xsd:double ;
+       :medida_largo "20.0"^^xsd:double ;
+       :moneda "Dolar" ;
+       :precio "220000.0"^^xsd:double ;
+       :superficie_cubierta "150.0"^^xsd:double ;
+       :superficie_lote "200.0"^^xsd:double ;
+       rdfs:label "Casa Farias"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Casa_Aguirre
+:Casa_Aguirre rdf:type owl:NamedIndividual ,
+                       :Casas ;
+              :seIncluyeEn :direccion4 ;
+              :cantidad_habitaciones 2 ;
+              :medida_ancho "10.0"^^xsd:double ;
+              :medida_largo "20.0"^^xsd:double ;
+              :moneda "Dolar"^^xsd:string ;
+              :precio "60000.0"^^xsd:double ;
+              :superficie_cubierta "150.0"^^xsd:double ;
+              :superficie_lote "200.0"^^xsd:double ;
+              rdfs:label "Casa Aguirre"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Casa_Mosquera
+:Casa_Mosquera rdf:type owl:NamedIndividual ,
+                        :Casas ;
+               :seIncluyeEn :Direccion1 ;
+               :cantidad_habitaciones 3 ;
+               :medida_ancho "20.0"^^xsd:double ;
+               :medida_largo "20.0"^^xsd:double ;
+               :moneda "Dolar" ;
+               :precio "200000.0"^^xsd:double ;
+               :superficie_cubierta "250.0"^^xsd:double ;
+               :superficie_lote "400.0"^^xsd:double ;
+               rdfs:label "Casa Mosquera" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Cuenca
+:Cuenca rdf:type owl:NamedIndividual ,
+                 :Ciudad ;
+        :seIncluyeEn :Azuay ;
+        rdfs:label "Cuenca"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Direccion1
+:Direccion1 rdf:type owl:NamedIndividual ,
+                     :Ubicacion ;
+            :seIncluyeEn :SanJacinto ;
+            rdfs:label "9na Sur y Palmeras"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Direccion2
+:Direccion2 rdf:type owl:NamedIndividual ,
+                     :Ubicacion ;
+            :seIncluyeEn :SantaElena ;
+            rdfs:label "10 de Agosto y 9na Norte"@es .
+
 
-###  http://www.utmachala.edu.ec/grupo1/#Duran
-<http://www.utmachala.edu.ec/grupo1/#Duran> rdf:type owl:NamedIndividual ,
-                                                     <http://www.utmachala.edu.ec/grupo1/#Ciudad> ;
-                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Guayas> ;
-                                            rdfs:label "Duran"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Duran
+:Duran rdf:type owl:NamedIndividual ,
+                :Ciudad ;
+       :seIncluyeEn :Guayas ;
+       rdfs:label "Duran"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Ecuador
-<http://www.utmachala.edu.ec/grupo1/#Ecuador> rdf:type owl:NamedIndividual ,
-                                                       <http://www.utmachala.edu.ec/grupo1/#Pais> ;
-                                              rdfs:label "Ecuador"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Ecuador
+:Ecuador rdf:type owl:NamedIndividual ,
+                  :Pais ;
+         rdfs:label "Ecuador"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#ElGuabo
-<http://www.utmachala.edu.ec/grupo1/#ElGuabo> rdf:type owl:NamedIndividual ,
-                                                       <http://www.utmachala.edu.ec/grupo1/#Ciudad> ;
-                                              <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#ElOro> ;
-                                              rdfs:label "El Guabo"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#ElGuabo
+:ElGuabo rdf:type owl:NamedIndividual ,
+                  :Ciudad ;
+         :seIncluyeEn :ElOro ;
+         rdfs:label "El Guabo"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#ElOro
-<http://www.utmachala.edu.ec/grupo1/#ElOro> rdf:type owl:NamedIndividual ,
-                                                     <http://www.utmachala.edu.ec/grupo1/#Provincia> ;
-                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#costaUri> ;
-                                            rdfs:label "El Oro"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#ElOro
+:ElOro rdf:type owl:NamedIndividual ,
+                :Provincia ;
+       :seIncluyeEn :costaUri ;
+       rdfs:label "El Oro"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Energia_Electrica
-<http://www.utmachala.edu.ec/grupo1/#Energia_Electrica> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.utmachala.edu.ec/grupo1/#Servicios> ;
-                                                        rdfs:label "Energia Electrica" .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Energia_Electrica
+:Energia_Electrica rdf:type owl:NamedIndividual ,
+                            :Servicios ;
+                   rdfs:label "Energia Electrica" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Gas
-<http://www.utmachala.edu.ec/grupo1/#Gas> rdf:type owl:NamedIndividual ,
-                                                   <http://www.utmachala.edu.ec/grupo1/#Servicios> ;
-                                          rdfs:label "Gas" .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Gas
+:Gas rdf:type owl:NamedIndividual ,
+              :Servicios ;
+     rdfs:label "Gas" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Guayaquil
-<http://www.utmachala.edu.ec/grupo1/#Guayaquil> rdf:type owl:NamedIndividual ,
-                                                         <http://www.utmachala.edu.ec/grupo1/#Ciudad> ;
-                                                <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Guayas> ;
-                                                rdfs:label "Guayaquil"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Guayaquil
+:Guayaquil rdf:type owl:NamedIndividual ,
+                    :Ciudad ;
+           :seIncluyeEn :Guayas ;
+           rdfs:label "Guayaquil"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Guayas
-<http://www.utmachala.edu.ec/grupo1/#Guayas> rdf:type owl:NamedIndividual ,
-                                                      <http://www.utmachala.edu.ec/grupo1/#Provincia> ;
-                                             <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#costaUri> ;
-                                             rdfs:label "Guayas"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Guayas
+:Guayas rdf:type owl:NamedIndividual ,
+                 :Provincia ;
+        :seIncluyeEn :costaUri ;
+        rdfs:label "Guayas"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Internet
-<http://www.utmachala.edu.ec/grupo1/#Internet> rdf:type owl:NamedIndividual ,
-                                                        <http://www.utmachala.edu.ec/grupo1/#Amenities> ;
-                                               rdfs:label "Internet"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Internet
+:Internet rdf:type owl:NamedIndividual ,
+                   :Amenities ;
+          rdfs:label "Internet"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Lote1
-<http://www.utmachala.edu.ec/grupo1/#Lote1> rdf:type owl:NamedIndividual ,
-                                                     <http://www.utmachala.edu.ec/grupo1/#Lotes> ;
-                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#direccion6> ;
-                                            <http://www.utmachala.edu.ec/grupo1/#medida_ancho> "8.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#medida_largo> "10.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#moneda> "Dolar" ;
-                                            <http://www.utmachala.edu.ec/grupo1/#precio> "20000.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#superficie_lote> "80.0"^^xsd:double ;
-                                            rdfs:label "Lote Mosquera"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Lote1
+:Lote1 rdf:type owl:NamedIndividual ,
+                :Lotes ;
+       :seIncluyeEn :direccion6 ;
+       :medida_ancho "8.0"^^xsd:double ;
+       :medida_largo "10.0"^^xsd:double ;
+       :moneda "Dolar" ;
+       :precio "20000.0"^^xsd:double ;
+       :superficie_lote "80.0"^^xsd:double ;
+       rdfs:label "Lote Mosquera"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Lote2
-<http://www.utmachala.edu.ec/grupo1/#Lote2> rdf:type owl:NamedIndividual ,
-                                                     <http://www.utmachala.edu.ec/grupo1/#Lotes> ;
-                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#direccion5> ;
-                                            <http://www.utmachala.edu.ec/grupo1/#medida_ancho> "10.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#medida_largo> "15.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#moneda> "Dolar" ;
-                                            <http://www.utmachala.edu.ec/grupo1/#precio> "35000.0"^^xsd:double ;
-                                            <http://www.utmachala.edu.ec/grupo1/#superficie_lote> "150.0"^^xsd:double ;
-                                            rdfs:label "Lote Figueroa"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Lote2
+:Lote2 rdf:type owl:NamedIndividual ,
+                :Lotes ;
+       :seIncluyeEn :direccion5 ;
+       :medida_ancho "10.0"^^xsd:double ;
+       :medida_largo "15.0"^^xsd:double ;
+       :moneda "Dolar" ;
+       :precio "35000.0"^^xsd:double ;
+       :superficie_lote "150.0"^^xsd:double ;
+       rdfs:label "Lote Figueroa"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Machala
-<http://www.utmachala.edu.ec/grupo1/#Machala> rdf:type owl:NamedIndividual ,
-                                                       <http://www.utmachala.edu.ec/grupo1/#Ciudad> ;
-                                              <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#ElOro> ;
-                                              rdfs:label "Machala"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Machala
+:Machala rdf:type owl:NamedIndividual ,
+                  :Ciudad ;
+         :seIncluyeEn :ElOro ;
+         rdfs:label "Machala"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Pasaje
-<http://www.utmachala.edu.ec/grupo1/#Pasaje> rdf:type owl:NamedIndividual ,
-                                                      <http://www.utmachala.edu.ec/grupo1/#Ciudad> ;
-                                             <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#ElOro> ;
-                                             rdfs:label "Pasaje"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Pasaje
+:Pasaje rdf:type owl:NamedIndividual ,
+                 :Ciudad ;
+        :seIncluyeEn :ElOro ;
+        rdfs:label "Pasaje"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#SanJacinto
-<http://www.utmachala.edu.ec/grupo1/#SanJacinto> rdf:type owl:NamedIndividual ,
-                                                          <http://www.utmachala.edu.ec/grupo1/#Barrio> ;
-                                                 <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Machala> ;
-                                                 rdfs:label "San Jacinto"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#SanJacinto
+:SanJacinto rdf:type owl:NamedIndividual ,
+                     :Barrio ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "San Jacinto"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#SantaElena
-<http://www.utmachala.edu.ec/grupo1/#SantaElena> rdf:type owl:NamedIndividual ,
-                                                          <http://www.utmachala.edu.ec/grupo1/#Barrio> ;
-                                                 <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Machala> ;
-                                                 rdfs:label "Santa Elena"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#SantaElena
+:SantaElena rdf:type owl:NamedIndividual ,
+                     :Barrio ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "Santa Elena"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#Sierra
-<http://www.utmachala.edu.ec/grupo1/#Sierra> rdf:type owl:NamedIndividual ,
-                                                      <http://www.utmachala.edu.ec/grupo1/#Region> ;
-                                             <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Ecuador> ;
-                                             rdfs:label "Sierra"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Sierra
+:Sierra rdf:type owl:NamedIndividual ,
+                 :Region ;
+        :seIncluyeEn :Ecuador ;
+        rdfs:label "Sierra"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#agente1
-<http://www.utmachala.edu.ec/grupo1/#agente1> rdf:type owl:NamedIndividual ,
-                                                       <http://www.utmachala.edu.ec/grupo1/#Agentes> ;
-                                              rdfs:label "Agente Raul Cabrera" .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#agente1
+:agente1 rdf:type owl:NamedIndividual ,
+                  :Agentes ;
+         rdfs:label "Agente Raul Cabrera" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#agente_juan_perez
-<http://www.utmachala.edu.ec/grupo1/#agente_juan_perez> rdf:type owl:NamedIndividual ,
-                                                                 <http://www.utmachala.edu.ec/grupo1/#Agentes> ;
-                                                        rdfs:label "Agente Raul perez" .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#agente_juan_perez
+:agente_juan_perez rdf:type owl:NamedIndividual ,
+                            :Agentes ;
+                   rdfs:label "Agente Raul perez" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#costaUri
-<http://www.utmachala.edu.ec/grupo1/#costaUri> rdf:type owl:NamedIndividual ,
-                                                        <http://www.utmachala.edu.ec/grupo1/#Region> ;
-                                               <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Ecuador> ;
-                                               rdfs:label "Costa"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#costaUri
+:costaUri rdf:type owl:NamedIndividual ,
+                   :Region ;
+          :seIncluyeEn :Ecuador ;
+          rdfs:label "Costa"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#direccion3
-<http://www.utmachala.edu.ec/grupo1/#direccion3> rdf:type owl:NamedIndividual ,
-                                                          <http://www.utmachala.edu.ec/grupo1/#Ubicacion> ;
-                                                 rdfs:label "Ecuador y 4to E"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#direccion3
+:direccion3 rdf:type owl:NamedIndividual ,
+                     :Ubicacion ;
+            rdfs:label "Ecuador y 4to E"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#direccion4
-<http://www.utmachala.edu.ec/grupo1/#direccion4> rdf:type owl:NamedIndividual ,
-                                                          <http://www.utmachala.edu.ec/grupo1/#Ubicacion> ;
-                                                 rdfs:label "Avenidad 8 Noviembre"@es .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#direccion4
+:direccion4 rdf:type owl:NamedIndividual ,
+                     :Ubicacion ;
+            rdfs:label "Avenidad 8 Noviembre"@es .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#direccion5
-<http://www.utmachala.edu.ec/grupo1/#direccion5> rdf:type owl:NamedIndividual ,
-                                                          <http://www.utmachala.edu.ec/grupo1/#Ubicacion> ;
-                                                 <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Machala> ;
-                                                 rdfs:label "Via Balosa" .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#direccion5
+:direccion5 rdf:type owl:NamedIndividual ,
+                     :Ubicacion ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "Via Balosa" .
 
 
-###  http://www.utmachala.edu.ec/grupo1/#direccion6
-<http://www.utmachala.edu.ec/grupo1/#direccion6> rdf:type owl:NamedIndividual ,
-                                                          <http://www.utmachala.edu.ec/grupo1/#Ubicacion> ;
-                                                 <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Machala> ;
-                                                 rdfs:label "Via Pajonal, terreno 10" .
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#direccion6
+:direccion6 rdf:type owl:NamedIndividual ,
+                     :Ubicacion ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "Via Pajonal, terreno 10" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
