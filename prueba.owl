@@ -1,0 +1,56 @@
+@prefix : <http://example.org/inmuebles#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Clases
+:Inmueble rdf:type owl:Class .
+:Lote rdf:type owl:Class ;
+    rdfs:subClassOf :Inmueble .
+:Casa rdf:type owl:Class ;
+    rdfs:subClassOf :Inmueble .
+
+# Propiedades
+:ubicacion rdf:type owl:ObjectProperty .
+:latitud rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:decimal .
+:longitud rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:decimal .
+:barrio rdf:type owl:DatatypeProperty .
+:dimensiones rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+:habitaciones rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:integer .
+:superficieCubierta rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:decimal .
+:aireAcondicionado rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:boolean .
+:calefaccionCentral rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:boolean .
+:valor rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:decimal .
+:moneda rdf:type owl:DatatypeProperty .
+:inmobiliaria rdf:type owl:DatatypeProperty .
+:agenteInmobiliario rdf:type owl:DatatypeProperty .
+
+# Individuos
+:miLote rdf:type :Lote ;
+    :ubicacion "Av. Principal, Machala, Ecuador" ;
+    :latitud -3.258 ;
+    :longitud -79.959 ;
+    :barrio "Centro" ;
+    :dimensiones "20x20 m" .
+
+:miCasa rdf:type :Casa ;
+    :ubicacion "Calle Residencial, Machala, Ecuador" ;
+    :latitud -3.265 ;
+    :longitud -79.952 ;
+    :barrio "Las Acacias" ;
+    :habitaciones 3 ;
+    :superficieCubierta 150.5 ;
+    :aireAcondicionado true ;
+    :calefaccionCentral false ;
+    :valor 180000 ;
+    :moneda "USD" ;
+    :inmobiliaria "InmoCity" ;
+    :agenteInmobiliario "Juan Pérez" .

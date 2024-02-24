@@ -334,7 +334,8 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Alcantarillado
 :Alcantarillado rdf:type owl:NamedIndividual ,
                          :Servicios ;
-                :tipo_servicio "Servicio Básico" .
+                :tipo_servicio "Servicio Básico" ;
+                rdfs:label "Alcantarillado" .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Amazonas
@@ -585,7 +586,7 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Direccion_en_Duran
 :Direccion_en_Duran rdf:type owl:NamedIndividual ,
                              :Ubicacion ;
-                    :situada_en_el_barrio :Amazonas ;
+                    :situada_en_el_barrio :Barrio2 ;
                     :direccion "Av. amazonas y calle M3" ;
                     :latitud "-2.165745"^^xsd:double ;
                     :longitud "-79.833574"^^xsd:double ;
@@ -638,7 +639,8 @@
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Gas
 :Gas rdf:type owl:NamedIndividual ,
               :Servicios ;
-     :tipo_servicio "Servicio Básico" .
+     :tipo_servicio "Servicio Básico" ;
+     rdfs:label "Gas" .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliaria/Inmobiliaria1

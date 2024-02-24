@@ -1,0 +1,344 @@
+@prefix : <http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37> .
+
+<http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#seIncluyeEn
+:seIncluyeEn rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty ;
+             rdfs:domain :Lugar ;
+             rdfs:range :Lugar .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#cantidad_habitaciones
+:cantidad_habitaciones rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#descripcion
+:descripcion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#direccion
+:direccion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#fecha_fin_publicacion
+:fecha_fin_publicacion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#fecha_publicacion
+:fecha_publicacion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#latitud
+:latitud rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#longitud
+:longitud rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#medida_ancho
+:medida_ancho rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#medida_largo
+:medida_largo rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#moneda
+:moneda rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#precio
+:precio rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#superficie_cubierta
+:superficie_cubierta rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#superficie_lote
+:superficie_lote rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#tipo_amenities
+:tipo_amenities rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#titulo
+:titulo rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Agentes
+:Agentes rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Amenities
+:Amenities rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Barrio
+:Barrio rdf:type owl:Class ;
+        rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casas
+:Casas rdf:type owl:Class ;
+       rdfs:subClassOf :Inmuebles .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Ciudad
+:Ciudad rdf:type owl:Class ;
+        rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Inmuebles
+:Inmuebles rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lotes
+:Lotes rdf:type owl:Class ;
+       rdfs:subClassOf :Inmuebles .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lugar
+:Lugar rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Pais
+:Pais rdf:type owl:Class ;
+      rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Provincia
+:Provincia rdf:type owl:Class ;
+           rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Servicios
+:Servicios rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Ubicacion
+:Ubicacion rdf:type owl:Class ;
+           rdfs:subClassOf :Lugar .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Aire_Acondicionado
+:Aire_Acondicionado rdf:type owl:NamedIndividual ,
+                             :Amenities ;
+                    rdfs:label "Aire Acondicionado"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Alcantarillado
+:Alcantarillado rdf:type owl:NamedIndividual ,
+                         :Servicios ;
+                rdfs:label "Alcantarillado" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Azuay
+:Azuay rdf:type owl:NamedIndividual ,
+                :Provincia ;
+       :seIncluyeEn :Sierra ;
+       rdfs:label "Azuay"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Calefaccion
+:Calefaccion rdf:type owl:NamedIndividual ,
+                      :Amenities ;
+             rdfs:label "Calefaccion"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa1
+:Casa1 rdf:type owl:NamedIndividual ,
+                :Casas ;
+       rdfs:label "Casa Berru"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa2
+:Casa2 rdf:type owl:NamedIndividual ,
+                :Casas ;
+       rdfs:label "Casa Farias"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa_Aguirre
+:Casa_Aguirre rdf:type owl:NamedIndividual ,
+                       :Casas ;
+              :seIncluyeEn :Guayaquil ;
+              rdfs:label "Casa Aguirre"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Cuenca
+:Cuenca rdf:type owl:NamedIndividual ,
+                 :Ciudad ;
+        :seIncluyeEn :Azuay ;
+        rdfs:label "Cuenca"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Direccion1
+:Direccion1 rdf:type owl:NamedIndividual ,
+                     :Ubicacion ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "9na Sur y Palmeras"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Direccion2
+:Direccion2 rdf:type owl:NamedIndividual ,
+                     :Ubicacion ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "10 de Agosto y 9na Norte"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Duran
+:Duran rdf:type owl:NamedIndividual ,
+                :Ciudad ;
+       :seIncluyeEn :Guayas ;
+       rdfs:label "Duran"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Ecuador
+:Ecuador rdf:type owl:NamedIndividual ,
+                  :Pais ;
+         rdfs:label "Ecuador"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#ElGuabo
+:ElGuabo rdf:type owl:NamedIndividual ,
+                  :Ciudad ;
+         :seIncluyeEn :ElOro ;
+         rdfs:label "El Guabo"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#ElOro
+:ElOro rdf:type owl:NamedIndividual ,
+                :Provincia ;
+       :seIncluyeEn :costaUri ;
+       rdfs:label "El Oro"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Energia_Electrica
+:Energia_Electrica rdf:type owl:NamedIndividual ,
+                            :Servicios ;
+                   rdfs:label "Energia Electrica" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Gas
+:Gas rdf:type owl:NamedIndividual ,
+              :Servicios ;
+     rdfs:label "Gas" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Guayaquil
+:Guayaquil rdf:type owl:NamedIndividual ,
+                    :Ciudad ;
+           :seIncluyeEn :Guayas ;
+           rdfs:label "Guayaquil"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Guayas
+:Guayas rdf:type owl:NamedIndividual ,
+                 :Provincia ;
+        :seIncluyeEn :costaUri ;
+        rdfs:label "Guayas"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Internet
+:Internet rdf:type owl:NamedIndividual ,
+                   :Amenities ;
+          rdfs:label "Internet"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lote1
+:Lote1 rdf:type owl:NamedIndividual ,
+                :Lotes ;
+       rdfs:label "Lote Mosquera"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lote2
+:Lote2 rdf:type owl:NamedIndividual ,
+                :Lotes ;
+       rdfs:label "Lote Figueroa"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Machala
+:Machala rdf:type owl:NamedIndividual ,
+                  :Ciudad ;
+         :seIncluyeEn :ElOro ;
+         rdfs:label "Machala"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Pasaje
+:Pasaje rdf:type owl:NamedIndividual ,
+                 :Ciudad ;
+        :seIncluyeEn :ElOro ;
+        rdfs:label "Pasaje"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#SanJacinto
+:SanJacinto rdf:type owl:NamedIndividual ,
+                     :Barrio ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "San Jacinto"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#SantaElena
+:SantaElena rdf:type owl:NamedIndividual ,
+                     :Barrio ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "Santa Elena"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Sierra
+:Sierra rdf:type owl:NamedIndividual ,
+                 :Region ;
+        :seIncluyeEn :Ecuador ;
+        rdfs:label "Sierra"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#agente1
+:agente1 rdf:type owl:NamedIndividual ,
+                  :Agentes ;
+         rdfs:label "Agente Raul Cabrera" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#agente_juan_perez
+:agente_juan_perez rdf:type owl:NamedIndividual ,
+                            :Agentes ;
+                   rdfs:label "Agente Raul perez" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#costaUri
+:costaUri rdf:type owl:NamedIndividual ,
+                   :Region ;
+          :seIncluyeEn :Ecuador ;
+          rdfs:label "Costa"@es .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
