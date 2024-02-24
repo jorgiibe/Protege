@@ -19,6 +19,24 @@
              rdfs:range :Lugar .
 
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#dispone_servicios_basicos
+:dispone_servicios_basicos rdf:type owl:ObjectProperty ;
+                           rdfs:domain :Casas ;
+                           rdfs:range :Servicios .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#oferta
+:oferta rdf:type owl:ObjectProperty ;
+        rdfs:domain :Avisos ;
+        rdfs:range :Inmuebles .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#tiene_amenities
+:tiene_amenities rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Casas ;
+                 rdfs:range :Amenities .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -147,6 +165,10 @@
            rdfs:subClassOf :Lugar .
 
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Avisos
+:Avisos rdf:type owl:Class .
+
+
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Inmobiliaria
 :Inmobiliaria rdf:type owl:Class .
 
@@ -196,6 +218,9 @@
 :Casa1 rdf:type owl:NamedIndividual ,
                 :Casas ;
        :seIncluyeEn :Direccion2 ;
+       :dispone_servicios_basicos :Alcantarillado ,
+                                  :Energia_Electrica ;
+       :tiene_amenities :Aire_Acondicionado ;
        :cantidad_habitaciones 3 ;
        :medida_ancho "12.0"^^xsd:double ;
        :medida_largo "20.0"^^xsd:double ;
@@ -444,6 +469,14 @@
                      :Ubicacion ;
             :seIncluyeEn :Machala ;
             rdfs:label "Via Pajonal, terreno 10" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Aviso1
+:Aviso1 rdf:type owl:NamedIndividual ,
+                 :Avisos ;
+        :oferta :Casa1 ,
+                :Lote2 ;
+        rdfs:label "Gran oferta de casas"@es .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Inmobiliaria1
