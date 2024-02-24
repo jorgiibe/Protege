@@ -49,6 +49,12 @@
                         rdfs:range :Agentes .
 
 
+###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#tiene_inmuebles
+:tiene_inmuebles rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Inmobiliaria ;
+                 rdfs:range :Inmuebles .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -386,12 +392,18 @@
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Inmobiliaria1
 :Inmobiliaria1 rdf:type owl:NamedIndividual ,
                         :Inmobiliaria ;
+               :tiene_inmuebles :Casa2 ,
+                                :Casa_Mosquera ,
+                                :Lote2 ;
                rdfs:label "Inmobiliaria Casa Grande"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Inmobiliaria2
 :Inmobiliaria2 rdf:type owl:NamedIndividual ,
                         :Inmobiliaria ;
+               :tiene_inmuebles :Casa1 ,
+                                :Casa_Aguirre ,
+                                :Lote1 ;
                rdfs:label "Inmobiliaira Casa Chica"@es .
 
 
