@@ -181,7 +181,12 @@
                 :Casas ;
        :seIncluyeEn :Direccion2 ;
        :cantidad_habitaciones 3 ;
-       :medida_ancho 10 ;
+       :medida_ancho "12.0"^^xsd:double ;
+       :medida_largo "20.0"^^xsd:double ;
+       :moneda "Dolar" ;
+       :precio "250000.0"^^xsd:double ;
+       :superficie_cubierta "180.0"^^xsd:double ;
+       :superficie_lote "240.0"^^xsd:double ;
        rdfs:label "Casa Berru"@es .
 
 
@@ -189,6 +194,13 @@
 :Casa2 rdf:type owl:NamedIndividual ,
                 :Casas ;
        :seIncluyeEn :direccion3 ;
+       :cantidad_habitaciones "4.0"^^xsd:double ;
+       :medida_ancho "10.0"^^xsd:double ;
+       :medida_largo "20.0"^^xsd:double ;
+       :moneda "Dolar" ;
+       :precio "220000.0"^^xsd:double ;
+       :superficie_cubierta "150.0"^^xsd:double ;
+       :superficie_lote "200.0"^^xsd:double ;
        rdfs:label "Casa Farias"@es .
 
 
