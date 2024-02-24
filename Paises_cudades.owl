@@ -216,7 +216,8 @@
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa1
 :Casa1 rdf:type owl:NamedIndividual ,
-                :Casas ;
+                :Casas ,
+                :Inmuebles ;
        :seIncluyeEn :Direccion2 ;
        :dispone_servicios_basicos :Alcantarillado ,
                                   :Energia_Electrica ;
@@ -233,7 +234,8 @@
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa2
 :Casa2 rdf:type owl:NamedIndividual ,
-                :Casas ;
+                :Casas ,
+                :Inmuebles ;
        :seIncluyeEn :direccion3 ;
        :cantidad_habitaciones "4.0"^^xsd:double ;
        :medida_ancho "10.0"^^xsd:double ;
@@ -247,7 +249,8 @@
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa_Aguirre
 :Casa_Aguirre rdf:type owl:NamedIndividual ,
-                       :Casas ;
+                       :Casas ,
+                       :Inmuebles ;
               :seIncluyeEn :direccion4 ;
               :cantidad_habitaciones 2 ;
               :medida_ancho "10.0"^^xsd:double ;
@@ -261,7 +264,8 @@
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Casa_Mosquera
 :Casa_Mosquera rdf:type owl:NamedIndividual ,
-                        :Casas ;
+                        :Casas ,
+                        :Inmuebles ;
                :seIncluyeEn :Direccion1 ;
                :cantidad_habitaciones 3 ;
                :medida_ancho "20.0"^^xsd:double ;
@@ -359,6 +363,7 @@
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lote1
 :Lote1 rdf:type owl:NamedIndividual ,
+                :Inmuebles ,
                 :Lotes ;
        :seIncluyeEn :direccion6 ;
        :medida_ancho "8.0"^^xsd:double ;
@@ -371,6 +376,7 @@
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Lote2
 :Lote2 rdf:type owl:NamedIndividual ,
+                :Inmuebles ,
                 :Lotes ;
        :seIncluyeEn :direccion5 ;
        :medida_ancho "10.0"^^xsd:double ;
