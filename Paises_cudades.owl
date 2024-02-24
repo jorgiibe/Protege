@@ -316,6 +316,11 @@
 :Lote1 rdf:type owl:NamedIndividual ,
                 :Lotes ;
        :seIncluyeEn :direccion6 ;
+       :medida_ancho "8.0"^^xsd:double ;
+       :medida_largo "10.0"^^xsd:double ;
+       :moneda "Dolar" ;
+       :precio "20000.0"^^xsd:double ;
+       :superficie_lote "80.0"^^xsd:double ;
        rdfs:label "Lote Mosquera"@es .
 
 
@@ -323,6 +328,11 @@
 :Lote2 rdf:type owl:NamedIndividual ,
                 :Lotes ;
        :seIncluyeEn :direccion5 ;
+       :medida_ancho "10.0"^^xsd:double ;
+       :medida_largo "15.0"^^xsd:double ;
+       :moneda "Dolar" ;
+       :precio "35000.0"^^xsd:double ;
+       :superficie_lote "150.0"^^xsd:double ;
        rdfs:label "Lote Figueroa"@es .
 
 
