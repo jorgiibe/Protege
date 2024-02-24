@@ -153,6 +153,12 @@
                     rdfs:label "Aire Acondicionado"@es .
 
 
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Alcantarillado
+:Alcantarillado rdf:type owl:NamedIndividual ,
+                         :Servicios ;
+                rdfs:label "Alcantarillado" .
+
+
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Azuay
 :Azuay rdf:type owl:NamedIndividual ,
                 :Provincia ;
@@ -231,6 +237,18 @@
                 :Provincia ;
        :seIncluyeEn :costaUri ;
        rdfs:label "El Oro"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Energia_Electrica
+:Energia_Electrica rdf:type owl:NamedIndividual ,
+                            :Servicios ;
+                   rdfs:label "Energia Electrica" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Gas
+:Gas rdf:type owl:NamedIndividual ,
+              :Servicios ;
+     rdfs:label "Gas" .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Guayaquil
