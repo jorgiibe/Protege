@@ -80,7 +80,8 @@
 #################################################################
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Aire_Acondicionado
-:Aire_Acondicionado rdf:type owl:NamedIndividual ;
+:Aire_Acondicionado rdf:type owl:NamedIndividual ,
+                             :Amenities ;
                     rdfs:label "Aire Acondicionado"@es .
 
 
@@ -92,7 +93,8 @@
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Calefaccion
-:Calefaccion rdf:type owl:NamedIndividual ;
+:Calefaccion rdf:type owl:NamedIndividual ,
+                      :Amenities ;
              rdfs:label "Calefaccion"@es .
 
 
@@ -178,7 +180,8 @@
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Internet
-:Internet rdf:type owl:NamedIndividual ;
+:Internet rdf:type owl:NamedIndividual ,
+                   :Amenities ;
           rdfs:label "Internet"@es .
 
 
