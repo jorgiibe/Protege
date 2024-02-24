@@ -284,6 +284,149 @@
 :Energia_Electrica rdf:type owl:NamedIndividual ,
                             :Servicios ;
                    rdfs:label "Energia Electrica" .
+###  http://www.utmachala.edu.ec/grupo1/Sucre
+:Sucre rdf:type owl:NamedIndividual ,
+                <http://www.utmachala.edu.ec/grupo1/#Barrio> ;
+       <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Cuenca> .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Aire_Acondicionado
+<http://www.utmachala.edu.ec/grupo1/#Aire_Acondicionado> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.utmachala.edu.ec/grupo1/#Amenities> ;
+                                                         rdfs:label "Aire Acondicionado"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Alcantarillado
+<http://www.utmachala.edu.ec/grupo1/#Alcantarillado> rdf:type owl:NamedIndividual ,
+                                                              <http://www.utmachala.edu.ec/grupo1/#Servicios> ;
+                                                     rdfs:label "Alcantarillado" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Azuay
+<http://www.utmachala.edu.ec/grupo1/#Azuay> rdf:type owl:NamedIndividual ,
+                                                     <http://www.utmachala.edu.ec/grupo1/#Provincia> ;
+                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Sierra> ;
+                                            rdfs:label "Azuay"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Calefaccion
+<http://www.utmachala.edu.ec/grupo1/#Calefaccion> rdf:type owl:NamedIndividual ,
+                                                           <http://www.utmachala.edu.ec/grupo1/#Amenities> ;
+                                                  rdfs:label "Calefaccion"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Casa1
+<http://www.utmachala.edu.ec/grupo1/#Casa1> rdf:type owl:NamedIndividual ,
+                                                     <http://www.utmachala.edu.ec/grupo1/#Casas> ;
+                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Direccion2> ;
+                                            <http://www.utmachala.edu.ec/grupo1/#cantidad_habitaciones> 3 ;
+                                            <http://www.utmachala.edu.ec/grupo1/#medida_ancho> "12.0"^^xsd:double ;
+                                            <http://www.utmachala.edu.ec/grupo1/#medida_largo> "20.0"^^xsd:double ;
+                                            <http://www.utmachala.edu.ec/grupo1/#moneda> "Dolar" ;
+                                            <http://www.utmachala.edu.ec/grupo1/#precio> "250000.0"^^xsd:double ;
+                                            <http://www.utmachala.edu.ec/grupo1/#superficie_cubierta> "180.0"^^xsd:double ;
+                                            <http://www.utmachala.edu.ec/grupo1/#superficie_lote> "240.0"^^xsd:double ;
+                                            rdfs:label "Casa Berru"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Casa2
+<http://www.utmachala.edu.ec/grupo1/#Casa2> rdf:type owl:NamedIndividual ,
+                                                     <http://www.utmachala.edu.ec/grupo1/#Casas> ;
+                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#direccion3> ;
+                                            <http://www.utmachala.edu.ec/grupo1/#cantidad_habitaciones> "4.0"^^xsd:double ;
+                                            <http://www.utmachala.edu.ec/grupo1/#medida_ancho> "10.0"^^xsd:double ;
+                                            <http://www.utmachala.edu.ec/grupo1/#medida_largo> "20.0"^^xsd:double ;
+                                            <http://www.utmachala.edu.ec/grupo1/#moneda> "Dolar" ;
+                                            <http://www.utmachala.edu.ec/grupo1/#precio> "220000.0"^^xsd:double ;
+                                            <http://www.utmachala.edu.ec/grupo1/#superficie_cubierta> "150.0"^^xsd:double ;
+                                            <http://www.utmachala.edu.ec/grupo1/#superficie_lote> "200.0"^^xsd:double ;
+                                            rdfs:label "Casa Farias"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Casa_Aguirre
+<http://www.utmachala.edu.ec/grupo1/#Casa_Aguirre> rdf:type owl:NamedIndividual ,
+                                                            <http://www.utmachala.edu.ec/grupo1/#Casas> ;
+                                                   <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#direccion4> ;
+                                                   <http://www.utmachala.edu.ec/grupo1/#cantidad_habitaciones> 2 ;
+                                                   <http://www.utmachala.edu.ec/grupo1/#medida_ancho> "10.0"^^xsd:double ;
+                                                   <http://www.utmachala.edu.ec/grupo1/#medida_largo> "20.0"^^xsd:double ;
+                                                   <http://www.utmachala.edu.ec/grupo1/#moneda> "Dolar"^^xsd:string ;
+                                                   <http://www.utmachala.edu.ec/grupo1/#precio> "60000.0"^^xsd:double ;
+                                                   <http://www.utmachala.edu.ec/grupo1/#superficie_cubierta> "150.0"^^xsd:double ;
+                                                   <http://www.utmachala.edu.ec/grupo1/#superficie_lote> "200.0"^^xsd:double ;
+                                                   rdfs:label "Casa Aguirre"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Casa_Mosquera
+<http://www.utmachala.edu.ec/grupo1/#Casa_Mosquera> rdf:type owl:NamedIndividual ,
+                                                             <http://www.utmachala.edu.ec/grupo1/#Casas> ;
+                                                    <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Direccion1> ;
+                                                    <http://www.utmachala.edu.ec/grupo1/#cantidad_habitaciones> 3 ;
+                                                    <http://www.utmachala.edu.ec/grupo1/#medida_ancho> "20.0"^^xsd:double ;
+                                                    <http://www.utmachala.edu.ec/grupo1/#medida_largo> "20.0"^^xsd:double ;
+                                                    <http://www.utmachala.edu.ec/grupo1/#moneda> "Dolar" ;
+                                                    <http://www.utmachala.edu.ec/grupo1/#precio> "200000.0"^^xsd:double ;
+                                                    <http://www.utmachala.edu.ec/grupo1/#superficie_cubierta> "250.0"^^xsd:double ;
+                                                    <http://www.utmachala.edu.ec/grupo1/#superficie_lote> "400.0"^^xsd:double ;
+                                                    rdfs:label "Casa Mosquera" .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Cuenca
+<http://www.utmachala.edu.ec/grupo1/#Cuenca> rdf:type owl:NamedIndividual ,
+                                                      <http://www.utmachala.edu.ec/grupo1/#Ciudad> ;
+                                             <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Azuay> ;
+                                             rdfs:label "Cuenca"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Direccion1
+<http://www.utmachala.edu.ec/grupo1/#Direccion1> rdf:type owl:NamedIndividual ,
+                                                          <http://www.utmachala.edu.ec/grupo1/#Ubicacion> ;
+                                                 <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#SanJacinto> ;
+                                                 <http://www.utmachala.edu.ec/grupo1/#latitud> "-2.2361853430304603"^^xsd:double ;
+                                                 <http://www.utmachala.edu.ec/grupo1/#longitud> "79.89505927353379"^^xsd:double ;
+                                                 rdfs:label "9na Sur y Palmeras"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Direccion2
+<http://www.utmachala.edu.ec/grupo1/#Direccion2> rdf:type owl:NamedIndividual ,
+                                                          <http://www.utmachala.edu.ec/grupo1/#Ubicacion> ;
+                                                 <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#SantaElena> ;
+                                                 <http://www.utmachala.edu.ec/grupo1/#latitud> "-3.667791"^^xsd:double ;
+                                                 <http://www.utmachala.edu.ec/grupo1/#longitud> "-79.695946"^^xsd:double ;
+                                                 rdfs:label "10 de Agosto y 9na Norte"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Duran
+<http://www.utmachala.edu.ec/grupo1/#Duran> rdf:type owl:NamedIndividual ,
+                                                     <http://www.utmachala.edu.ec/grupo1/#Ciudad> ;
+                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#Guayas> ;
+                                            rdfs:label "Duran"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Ecuador
+<http://www.utmachala.edu.ec/grupo1/#Ecuador> rdf:type owl:NamedIndividual ,
+                                                       <http://www.utmachala.edu.ec/grupo1/#Pais> ;
+                                              rdfs:label "Ecuador"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#ElGuabo
+<http://www.utmachala.edu.ec/grupo1/#ElGuabo> rdf:type owl:NamedIndividual ,
+                                                       <http://www.utmachala.edu.ec/grupo1/#Ciudad> ;
+                                              <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#ElOro> ;
+                                              rdfs:label "El Guabo"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#ElOro
+<http://www.utmachala.edu.ec/grupo1/#ElOro> rdf:type owl:NamedIndividual ,
+                                                     <http://www.utmachala.edu.ec/grupo1/#Provincia> ;
+                                            <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> <http://www.utmachala.edu.ec/grupo1/#costaUri> ;
+                                            rdfs:label "El Oro"@es .
+
+
+###  http://www.utmachala.edu.ec/grupo1/#Energia_Electrica
+<http://www.utmachala.edu.ec/grupo1/#Energia_Electrica> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.utmachala.edu.ec/grupo1/#Servicios> ;
+                                                        rdfs:label "Energia Electrica" .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#Gas
@@ -400,6 +543,13 @@
 :direccion4 rdf:type owl:NamedIndividual ,
                      :Ubicacion ;
             rdfs:label "Avenidad 8 Noviembre"@es .
+###  http://www.utmachala.edu.ec/grupo1/#direccion4
+<http://www.utmachala.edu.ec/grupo1/#direccion4> rdf:type owl:NamedIndividual ,
+                                                          <http://www.utmachala.edu.ec/grupo1/#Ubicacion> ;
+                                                 <http://www.utmachala.edu.ec/grupo1/#seIncluyeEn> :Sucre ;
+                                                 <http://www.utmachala.edu.ec/grupo1/#latitud> "0.9765457318396071"^^xsd:double ;
+                                                 <http://www.utmachala.edu.ec/grupo1/#longitud> "-79.6535075243856"^^xsd:double ;
+                                                 rdfs:label "Avenidad 8 Noviembre"@es .
 
 
 ###  http://www.utmachala.edu.ec/grupo1/inmobiliarias#direccion5
