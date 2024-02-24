@@ -66,6 +66,11 @@
         rdfs:subClassOf :Lugar .
 
 
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Ubicacion
+:Ubicacion rdf:type owl:Class ;
+           rdfs:subClassOf :Lugar .
+
+
 #################################################################
 #    Individuals
 #################################################################
@@ -94,6 +99,20 @@
                  :Ciudad ;
         :seIncluyeEn :Azuay ;
         rdfs:label "Cuenca"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Direccion1
+:Direccion1 rdf:type owl:NamedIndividual ,
+                     :Ubicacion ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "9na Sur y Palmeras"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Direccion2
+:Direccion2 rdf:type owl:NamedIndividual ,
+                     :Ubicacion ;
+            :seIncluyeEn :Machala ;
+            rdfs:label "10 de Agosto y 9na Norte"@es .
 
 
 ###  http://www.semanticweb.org/jorge/ontologies/2024/1/untitled-ontology-37#Duran
